@@ -4,6 +4,6 @@ Ate the British Society for Parasitology, Spring  Meeting 2024, University of Li
 ## Course Overview
 
 ## Course Manual
-### Introductory Presentation
-### Online Manual
-### Answers to Exercises
+Introductory Presentation
+Online Manual
+Answers to Exercises
