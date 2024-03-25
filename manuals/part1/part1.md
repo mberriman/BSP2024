@@ -94,7 +94,7 @@ Table Features:
 ![](figures/figure_4.3.png)
 
 The genome page has useful summary information about the species and the assembly. You can see a summary of the methods used to produce the assembly and the annotation, and links to the publication describing it in more detail (where this is available).
-3. Look now at the ‘Assembly statistics’ box.
+3\. Look now at the ‘Assembly statistics’ box.
 
 ![](figures/figure_4.4.png)
 
@@ -117,8 +117,8 @@ The information in this box tells us about two metrics related to the quality of
 ---
 #### Genome assembly metrics exercise <a name="genomes_exercise"></a>
 
-1. Find the two other genome assemblies from different _Brugia_ species in WormBase ParaSite, which are of lower quality than _Brugia malayi_.
-2. According to their scaffold statistics and BUSCO scores, which of these two assemblies is more contiguous and complete?
+1\. Find the two other genome assemblies from different _Brugia_ species in WormBase ParaSite, which are of lower quality than _Brugia malayi_.
+2\. According to their scaffold statistics and BUSCO scores, which of these two assemblies is more contiguous and complete?
 
 ---
 ## Looking at genes in WormBase ParaSite <a name="wbps_genes"></a>
@@ -134,13 +134,13 @@ The page should look something like this:
 
 ![](figures/figure_3.1.png)  
 
-2. Paste "T265_10539" into the search bar in the top right of the page and click return. T265_10539 is a stable (i.e. permanent) identifier for a gene. These identifiers are usually allocated by the scientist or group that sequenced and annotated the genome.
+2\. Paste "T265_10539" into the search bar in the top right of the page and click return. T265_10539 is a stable (i.e. permanent) identifier for a gene. These identifiers are usually allocated by the scientist or group that sequenced and annotated the genome.
 
 ![](figures/figure_3.2.png)  
 
 You should get one result, matching a gene in *Opisthorchis viverrini*, the Southeast Asian liver fluke. Let's look at the page for the T265_10539 gene:
 
-3. Click T265_10539
+3\. Click T265_10539
 
 Every gene in WormBase ParaSite has a gene page, which presents sequence data and a summary of information from various sources about the gene.
 
@@ -154,7 +154,7 @@ On the left, we have a navigation menu, which can be used to explore the informa
 
 The “Genomic context” image underneath shows us a snapshot of the scaffold that our gene is on.
 
-4. Click the ‘Region in Detail’ link in the “Genomic context” section. <a name="genome_browser"></a>
+4\. Click the ‘Region in Detail’ link in the “Genomic context” section. <a name="genome_browser"></a>
 
 ![](figures/figure_3.4.png)
 Here, each of the three boxes gives us an increasingly zoomed-in view of the gene’s genomic position. The top box shows the whole scaffold, and the middle box below it shows a zoomed-in part of the scaffold. In this case, the scaffold ("opera_v5_385") is short so the middle box is showing the whole scaffold. Looking at the middle box, it shows us that out gene of interest is located approximately a quarter of the way along the scaffold. The bottom box shows us the structure of the gene model.
@@ -172,11 +172,11 @@ There is an alternative interactive Genome Browser in WormBase ParaSite that can
 </details>
 <br>
 
-5. Navigate back to the gene page by clicking the "Gene:inx" tab at the top of the page.
+5\. Navigate back to the gene page by clicking the "Gene:inx" tab at the top of the page.
 
 As well as gene pages, WormBase ParaSite has a page for each transcript that a gene produces. In this case, only one transcript isoform has been annotated.
 
-6. On the gene page, click the "Show transcript table" button to show the trancript table. Then click the transcript ID in the transcipt table to navigate to the transcript page.
+6\. On the gene page, click the "Show transcript table" button to show the trancript table. Then click the transcript ID in the transcipt table to navigate to the transcript page.
 
 ![](figures/figure_3.5.png)
 
@@ -184,7 +184,7 @@ Again using the navigation menu on the left hand side of the page, we can retrie
 
 ![](figures/figure_3.6.png)
 
-7. Click “Exons”, “cDNA” and “Protein” in the “Sequence” section of the navigation menu to see the different types of sequence that are available for the transcript.
+7\. Click “Exons”, “cDNA” and “Protein” in the “Sequence” section of the navigation menu to see the different types of sequence that are available for the transcript.
 
 ![](figures/figure_3.7.png)
 
@@ -208,7 +208,7 @@ So far we have gathered general information about this _Opisthorcis viverrini_ g
 
 ##### Gene ontology (GO) <a name="go_terms"></a>
 
-A fast way to find out about the function of a gene’s product is to see which Gene Ontology (GO) terms have been associated with it. GO is a project that seeks to describe complex biology in a logical, hierarchical and computer-processable way. It is a controlled vocabulary, whereby proteins are associated with GO terms that describe their function. There are three aspects to GO: Cellular Component, Molecular Function and Biological Process. Cellular Component GO terms describe where a protein is localised (in the membrane, extracellular, in the nucleus etc). Molecular Function GO terms describe the biochemical activity of the protein. Biological Process GO terms describe the pathways and broader processes that the protein contributes to.
+A fast way to find out about the function of a gene’s product is to see which Gene Ontology (GO) terms have been associated with it. GO is a project that seeks to describe complex biology in a logical and consistent way that is humanreadable and and computer-processable. GO is a controlled vocabulary, whereby gene products are associated with GO terms that describe their function. There are three aspects to GO: Cellular Component, Molecular Function and Biological Process. Cellular Component GO terms describe where a protein is localised (in the membrane, extracellular, in the nucleus etc). Molecular Function GO terms describe the biochemical activity of the protein. Biological Process GO terms describe the pathways and broader processes that the protein contributes to.
 
 1. Click the “Gene:inx” tab at the top of the page to return to the main gene page, then select "Biological process" and/or “Cellular component” from the Gene Ontology section of the navigation menu.
 
@@ -224,11 +224,9 @@ The GO terms associated with this gene make sense given what we already know abo
 ---
 ##### Protein Features and Domains <a name="protein_domains"></a>
 
-How we do go from a string of amino acids to predicting what this protein might do in the cell? This is where another type of database comes in: protein family databases. 
+For the vast majority of predicted protein sequences, experiments to determine function have not yet been performed. However, we can use **homology** to take proteins that are well-studied in one experimental system and infer that proteins of similar sequence in other organisms are likely to have similar structure, and therefore similar function.
 
-For the vast majority of predicted protein sequences, nobody will have done experiments to test what its function is. However, we can use the principle of **homology** to take proteins that are well-studied in one experimental system and infer that proteins of similar sequence in other organisms are likely to have similar structure, and therefore similar function.
-
-In reality, protein sequences are analysed in terms of domains: these are subsequences of a protein that have a defined tertiary structure or sequence motif, conferring a defined function. A protein can consist of several domains. When comparing proteins between organisms, often the region encoding a protein domain is highly conserved whilst the bit that connects different domains together is more divergent.
+Protein sequences are commonly analysed by looking at their domains - subsequences of a protein that have a defined tertiary structure or sequence motif and confer a defined function. A protein can consist of several domains. When comparing proteins between organisms, often the region encoding a protein domain is highly conserved whilst the bit that connects different domains together is more divergent.
 
 **The [InterPro](https://www.ebi.ac.uk/interpro/) consortium**: There are many protein domain databases. A well known example of a protein domain database is Pfam. Pfam uses multiple sequence alignments of the known proteins with a certain domain to capture a representative model (a profile Hidden Markov Model) of that domain. Other protein domain databases, that might use slightly different methods to define domains, are:  CATH, CDD, HAMAP, MobiDB Lite, Panther, PIRSF, PRINTS, Prosite, SFLD, SMART, SUPERFAMILY and TIGRfams. Luckily for us, all of these databases are united under the [InterPro](https://www.ebi.ac.uk/interpro/) consortium.
 
@@ -237,7 +235,7 @@ In reality, protein sequences are analysed in terms of domains: these are subseq
 InterPro provides a tool, [InterProScan](https://www.ebi.ac.uk/interpro/search/sequence/), that we can use to search protein sequences against all of the member databases to identify any protein domains that the protein might have:
 InterProScan is an extremely useful tool for predicting gene and protein function.
 
-**At WormBase ParaSite, we have pre-run InterProScan to annotate protein domains for all of the genes in our database so you don't have to do it yourself every time!**
+**At WormBase ParaSite, we pre-run InterProScan to annotate protein domains for all of the genes in our database so you don't have to do it yourself every time!**
 
 1. To view the annotated protein domains, click the “Protein summary” menu option in the navigation menu on the T265_10539 transcript page.
 
@@ -266,17 +264,13 @@ On the results page, each horizontal coloured line represents a match between ou
 ---
 ##### Protein Structure: Explore the 3D protein model of the gene using AlphaFold <a name="af"></a>
 
-Knowledge of protein's 3D structure is a huge hint for understanding how the protein works, and use that information for different purposes; control or modify protein's function, predict what molecules bind to that protein and understand various biological interactions, assist drug discovery or even design our own proteins.
+A protein's function is determined by its 3D structure. Knowing its structure can enable detailed predictions to be made about its function, such as mechanistic insights into important biological interactions with other proteins, or even drugs. 
 
-Protein structure prediction is the inference of the three-dimensional structure of a protein from its amino acid sequence—that is, the prediction of its secondary and tertiary structure from primary structure.
+Very few protein structures have been directly solved but the ability to predict structures has dramatically improved recently.
 
-Predicting the 3D structure of proteins is one of the fundamental grand challenges in biology. By solving this challenge, we can dramatically deepen our understanding of human health, disease, and our environment, especially within areas like drug design and sustainability.
+[AlphaFold](https://alphafold.ebi.ac.uk/), is a state-of-the-art AI system developed by [DeepMind](https://www.deepmind.com/) that is able to computationally predict protein structures with unprecedented accuracy and speed. Working in partnership with [EMBL’s European Bioinformatics Institute (EMBL-EBI)](https://www.ebi.ac.uk/), AlphaFold released over 200 million protein structure predictions that are freely and openly available to the global scientific community. Included are nearly all catalogued proteins known to science – with the potential to increase humanity’s understanding of biology by orders of magnitude.
 
-![](figures/figure_3.16.png)
-
-[AlphaFold](https://alphafold.ebi.ac.uk/), the state-of-the-art AI system developed by [DeepMind](https://www.deepmind.com/), is able to computationally predict protein structures with unprecedented accuracy and speed. Working in partnership with [EMBL’s European Bioinformatics Institute (EMBL-EBI)](https://www.ebi.ac.uk/), AlphaFold released over 200 million protein structure predictions that are freely and openly available to the global scientific community. Included are nearly all catalogued proteins known to science – with the potential to increase humanity’s understanding of biology by orders of magnitude.
-
-WormBase ParaSite has imported all AlphaFold predicted models available for its genes.
+All AlphaFold-predicted models available for proteins encoded by WormBase ParaSite species have been imported.
 
 1. AlphaFold predicted model is browsable from the transcript page. To view the model click the “AlphaFold predicted model” menu option in the left navigation menu on the T265_10539 transcript page.
 
@@ -287,9 +281,8 @@ You can now view the shiny new interactive 3D AlphaFold structure of the protein
 Drag and drop with your mouse over the protein model to rotate it and use your mouse wheel to zoom in/out. You can use the right panel to visualise exons as well protein domains and features on the 3D model. This might give you a better understanding of where your domains of interest are. 
 
 <details close>
-<summary>What can I do with an AlphaFold protein structure?</summary>
-
-To download the raw files for an AlphaFold protein structure you found in WormBase ParaSite:
+<summary>What can I do with an AlphaFold protein structure?<br>
+To download the raw files for an AlphaFold protein structure you found in WormBase ParaSite:</summary>
 1. Take a note of the AlphaFold accession ID, in our case it's: AF-A0A074Z666-F1
 2. Go to the AlphaFold web-page and search for it (https://alphafold.ebi.ac.uk/entry/A0A074Z666).
 3. At the top of the page you can downlaod the prediction in PDF, mmCIF or Predicted Align Error format. 
@@ -350,7 +343,7 @@ Note that the most closely related gene in the tree is from another _Opisthorchi
 
 Next to the main tree, in green, we can see a pictorial summary of the multiple alignment of the proteins of these four genes, with green coloured regions representing alignments and non-coloured regions representing gaps. You may be interested in exploring these alignments at a higher resolution.
 
-* Click the node that separates the _Opisthorchis sp._ from the Blood Flukes and then click "View in Wasabi" in the pop-up box.
+* Click the node that separates the _Opisthorchis_ spp. from the blood flukes and then click "View in Wasabi" in the pop-up box.
 
 A multiple alignment of the 25  proteins will appear in a new window: we can see that parts of these protein sequences are extremely well conserved. 
 
