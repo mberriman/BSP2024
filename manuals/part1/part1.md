@@ -21,9 +21,9 @@
     * [EXERCISE](#biomart_exercise)
 
 ## Overview and Aims <a name="intro"></a>
-In this first module we'll start by reviewing the basics on genes and genomes: what they are, how we represent and talk about them, and how we go from a DNA sequence- a string of letters- to making predictions about gene function. We'll look at this in the context of WormBase ParaSite (which you might also see referred to as WBPS) and other online database resources. 
+We'll start by reviewing the basics on genes and genomes: what they are, how we represent and talk about them, and how we go from a DNA sequence- a string of letters- to making predictions about gene function. We'll look at this in the context of WormBase ParaSite and other online database resources. 
 
-In short, WormBase ParaSite gathers together nematode and flatworm genomes that have been assembled and annotated by the research community, adds additional analyses and makes these data available to the scientific community. We'll look at the kind of data you can retrieve, initially by exploring the website. In the last part of the module we'll introduce BioMart. This is a data-mining tool that allows you to retrieve WormBase ParaSite data in bulk.
+WormBase ParaSite gathers together nematode and flatworm genomes that have been assembled and annotated by the research community, adds additional analyses and makes these data available to the scientific community. We'll look at the kind of data you can retrieve, initially by exploring the website. In the last part of the module we'll introduce BioMart. This is a data-mining tool that allows you to retrieve WormBase ParaSite data in bulk.
 
 ---
 ## Genes and Genomes  <a name="genes_and_genomes"></a>
@@ -56,7 +56,7 @@ Sometimes, there is insufficient (or no) data to reliably place a scaffold into 
 ---
 ### Sequence databases <a name="sequence_databases"></a>
 
-Over the last few decades, as technology has evolved, we've seen an explosion in the number of genes and, later, genomes that have been sequenced. Sequence databases provide a place where these sequences can be deposited, stored and made available to the world. There are three widely-used nucleotide repositories (or primary databases) for the submission of nucleotide and genome sequences:
+As technology has evolved, there has been an explosion in the number of genomes that have been sequenced. Sequence databases provide a place where these sequences can be deposited, stored and made available to the world. There are three widely-used nucleotide repositories (or primary databases) for the submission of nucleotide and genome sequences:
 
 * [GenBank](https://www.ncbi.nlm.nih.gov/genbank), hosted by the National Center for Biotechnology Information (or NCBI).
 * The [European Nucleotide Archive (ENA)](http://www.ebi.ac.uk/ena), hosted by the European Molecular Biology Laboratories (EMBL).
@@ -64,14 +64,12 @@ Over the last few decades, as technology has evolved, we've seen an explosion in
 
 Together they form the [International Nucleotide Sequence Database Collaboration](http://www.insdc.org/about) and luckily for users, they all “mirror” each other. This means that irrespective of where a sequence is submitted, the entry will appear in all three databases. Once data are deposited in primary databases, they can be accessed freely by anyone around the world.
 
-WormBase ParaSite takes sequencing data from INSDC (a genome assembly and a set of gene predictions) and adds additional value to the data by performing additional analyses. The data is being available to researchers in a user-friendly interactive way. In this part of the module we will explore the basic functionality of the website for looking at helminth genomes and genes.
+WormBase ParaSite takes sequencing data from INSDC (a genome assembly and a set of gene predictions) and adds additional value by performing additional analyses and making the data available in a user-friendly interactive way. In this part of the workshop, we will explore the basic functionality of the website for looking at helminth genomes and genes.
 
 [↥ **Back to top**](#top)
 
 ---
 ## Looking at genomes in WormBase ParaSite <a name="wbps_genomes"></a>
-
-WormBase ParaSite is a collection of genomes from different nematodes and platyhelminthes!
 
 In this section, we’ll explore how genome assemblies are presented in WormBase ParaSite, and look at some commonly used metrics of assembly quality.
 
