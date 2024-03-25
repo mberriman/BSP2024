@@ -243,7 +243,7 @@ On this page we see a pictorial representation of the protein domains that have 
 
 ![](figures/figure_3.9.png)
 
-2. The same data is available in tabular format. To view this format, click the “Domains & features” menu option.
+2\. The same data is available in tabular format. To view this format, click the “Domains & features” menu option.
 
 ![](figures/figure_3.10.png)
 
@@ -276,7 +276,7 @@ All AlphaFold-predicted models available for proteins encoded by WormBase ParaSi
 
 ![](figures/figure_3.17.png)
 
-You can now view the shiny new interactive 3D AlphaFold structure of the protein. The interactive molecular viewer visualizes the structure, coloured by the per-residue pLDDT confidence measure. 
+You can now view the interactive 3D AlphaFold structure of the protein. The interactive molecular viewer visualizes the structure, coloured by the per-residue pLDDT confidence measure. 
 
 Drag and drop with your mouse over the protein model to rotate it and use your mouse wheel to zoom in/out. You can use the right panel to visualise exons as well protein domains and features on the 3D model. This might give you a better understanding of where your domains of interest are. 
 
@@ -284,13 +284,13 @@ Drag and drop with your mouse over the protein model to rotate it and use your m
 <summary>What can I do with an AlphaFold protein structure?<br>
 To download the raw files for an AlphaFold protein structure you found in WormBase ParaSite:</summary>
 
-- 1. Take a note of the AlphaFold accession ID, in our case it's: AF-A0A074Z666-F1
-- 2. Go to the AlphaFold web-page and search for it (https://alphafold.ebi.ac.uk/entry/A0A074Z666).
-- 3. At the top of the page you can downlaod the prediction in PDF, mmCIF or Predicted Align Error format.
+1. Take a note of the AlphaFold accession ID, in our case it's: AF-A0A074Z666-F1
+2. Go to the AlphaFold web-page and search for it (https://alphafold.ebi.ac.uk/entry/A0A074Z666).
+3. At the top of the page you can downlaod the prediction in PDF, mmCIF or Predicted Align Error format.
 
-Then you could use the structure file to perform subsequent analyses. Online tools that can be used with the downloaded structures from AlphaFold:
+<summary>Then you could use the structure file to perform subsequent analyses. Online tools that can be used with the downloaded structures from AlphaFold:
 
-- [SwissDock](http://www.swissdock.ch/), a web service to predict the molecular interactions that may occur between a target protein and a small molecule. It is used alongside S3DB, a database of manually curated target and ligand structures, inspired by the Ligand-Protein Database. 
+- [SwissDock](http://www.swissdock.ch/), a web service to predict the molecular interactions that may occur between a target protein and a small molecule. It is used alongside S3DB, a database of manually curated target and ligand structures, inspired by the Ligand-Protein Database.</summary>
 
 - [Zhang group Online-serivces portal](https://zhanggroup.org/)
   - Docking simulations (https://zhanggroup.org/EDock/) against different ligands.
@@ -325,7 +325,7 @@ For each family, we arrange the genes into an evolutionary tree.
 
 ![](figures/figure_3.13.png)
 
-The gene tree shows the inferred evolutionary history of the family that this gene is a member of.
+The gene tree shows the inferred evolutionary history for the family that this gene is a member of.
 
 - End of branches: At the ends of the branches are genes, with our gene of interest highlighted in red. 
 - Nodes: The points where the branches split are called nodes; nodes represent different evolutionary events, with these being represented in the tree by different colours.
