@@ -335,24 +335,26 @@ The gene tree shows the inferred evolutionary history for the family that this g
 
 Note that the most closely related gene in the tree is from another _Opisthorchis_ species, _O. felineus_, these two genes are orthologous to each other.
 ![](figures/figure_3.18.png)
+<br>
+<br>
 - **Orthologues** are genes that evolved from a common ancestral gene by speciation; they may have diverged to a greater or lesser degree in their sequences, but often retain their function in their respective species.
 - **Paralogues** are genes that have evolved from a common ancestral gene by duplication.
 
 **It can be useful to look at alignments of these related proteins to see how well conserved they are. Highly conserved regions are more likely to be essential for the function of the protein. To do this:**
 
-1. Click on the section of the tree labelled “Blood flukes" and click “expand this subtree”.
+2\. Click on the section of the tree labelled “Blood flukes" and click “expand this subtree”.
 
 Next to the main tree, in green, we can see a pictorial summary of the multiple alignment of the proteins of these four genes, with green coloured regions representing alignments and non-coloured regions representing gaps. You may be interested in exploring these alignments at a higher resolution.
 
-* Click the node that separates the _Opisthorchis_ spp. from the blood flukes and then click "View in Wasabi" in the pop-up box.
+3\. Click the node that separates the _Opisthorchis_ spp. from the blood flukes and then click "View in Wasabi" in the pop-up box.
 
-A multiple alignment of the 25  proteins will appear in a new window: we can see that parts of these protein sequences are extremely well conserved. 
+A multiple alignment of the 25 proteins will appear in a new window: we can see that parts of these protein sequences are extremely well conserved. 
 
 ![](figures/figure_3.14.png)
 
 Orthologues and paralogues are also available in tabular format, where they can be easily exported.
 
-* Select “Orthologues” in the navigation menu.
+4\. Select “Orthologues” in the navigation menu.
 
 ![](figures/figure_3.15.png)
 
@@ -371,6 +373,7 @@ WormBase ParaSite uses a computational pipeline developed by the [Ensembl](https
 6. Orthologues and paralogues are called on the basis of the resulting tree: any two genes separated by speciation events are orthologs, and any two genes in the same species separated by a duplication event are paralogues.
 
 You can read more about this pipeline [here](http://www.ensembl.org/info/genome/compara/homology_method.html).
+
 
 [↥ **Back to top**](#top)
 
