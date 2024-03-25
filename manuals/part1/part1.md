@@ -28,11 +28,11 @@ WormBase ParaSite gathers together nematode and flatworm genomes that have been 
 ---
 ## Genes and Genomes  <a name="genes_and_genomes"></a>
 
-Throughout this course, we assume that you're familiar with genes and genomes. 
+Throughout this course, we'll assume that you're familiar with genes and genomes. 
 
 ### Genes: the basics  <a name="basics_genes"></a>
 
-A **gene** is a unit of the genome, a DNA sequence, that is transcribed into an RNA molecule, or a transcript. A gene's transcript may go on to be translated into a protein (in that case it is an mRNA), or it may have a role as a non-coding RNA. Examples of the latter include ribosomal RNAs (rRNA), transfer RNAs (tRNA) and microRNAs (miRNA).
+A **gene** is a unit of the genome, a DNA sequence, that is transcribed into an RNA molecule, or a transcript. A gene's transcript may go on to be translated into a protein (in that case it is an mRNA), or it may have a role as a non-coding RNA, such as a ribosomal RNA (rRNA), transfer RNAs (tRNA), microRNA (miRNA), or long non-coding RNA (lncRNA).
 
 In eukaryotes, most protein-coding genes comprise alternating **exons** and **introns** (some genes have a single exon), flanked by **untranslated regions** (UTRs). The exons constitute the parts of the gene that are translated into a polypeptide. Introns are transcribed but soon after excised and the final mature mRNA is formed by a 5’UTR, joined exons and a 3’UTR. A CAP and poly-A tail are added to the 5’ and 3’ ends respectively. These structures are essential to guarantee the molecular stability and downstream processing of the mRNAs.
 
@@ -121,17 +121,6 @@ The information in this box tells us about two metrics related to the quality of
 2. According to their scaffold statistics and BUSCO scores, which of these two assemblies is more contiguous and complete?
 
 ---
-#### How to submit a genome to WormBase ParaSite? <a name="submit_genome"></a>
-
-Let's say you have just finished working on a genome project and you would like to submit it to WormBase ParaSite. WBPS takes sequencing data from INSDC (a genome assembly and a set of gene predictions).
-
-If you are interested in including your newly sequenced genome to WBPS you need to:
-
-1) Make sure to first submit the genome assembly to the INSDC either through [ENA](https://ena-docs.readthedocs.io/en/latest/submit/assembly.html), [NCBI](https://www.ncbi.nlm.nih.gov/assembly/docs/submission/) or [DDBJ](https://www.ddbj.nig.ac.jp/ddbj/submission-e.html).<br><br>INSDC stores both primary data (i.e. the sequence reads exactly as they come off the machine) and assembled genomes (i.e. where an assembly algorithm has been used to build scaffolds or chromosomes from those reads). Commonly, these data are all stored together under what's known as a **BioProject**. Each BioProject is identified by an **accession**. Although every BioProject accession is a unique identifier for that project, they all start with a 5-letter code that denotes which INSDC database the data were submitted to: "PRJEB" for ENA, "PRJNA" for GenBank, and "PRJDB" for DDBJ.<br><br>An AGP file is often also provided, describing how the contigs fit together as scaffolds, and how the scaffolds fit together as chromosomes.<br><br> 
-
-2) Submit the gene models annotation file in GFF format (more on this file format later).<br><br>A genome project may also contain an annotation file. This file contains predicted gene structures: based on the genome sequence, certain algorithms can predict which regions encode genes. An example of a commonly-used gene prediction tools is [BRAKER](https://github.com/Gaius-Augustus/BRAKER). These predictions may or may not be guided by other types of evidence, such as RNA sequencing data. It is important to bear in mind that the majority of genes as they appear in the sequence databases (and also in WormBase ParaSite) are based on predictions: these predictions are driven by evidence, but most genes from helminth genome assemblies are unlikely to have been cloned and sequenced in their entirety. We'll look at an example of checking how well a gene model is supported by RNAseq evidence in the next WormBase ParaSite module. The gene models annotation file can either be submitted to the INSDC as part of the assembly submission or directly to us.
-
----
 ## Looking at genes in WormBase ParaSite <a name="wbps_genes"></a>
 For each genome in WormBase ParaSite, there are gene and transcript pages available for browsing. The aim of this section is to familiarise you with retrieving information about a gene of interest from WormBase ParaSite.
 
@@ -145,11 +134,11 @@ The page should look something like this:
 
 ![](figures/figure_3.1.png)  
 
-2. Paste "T265_10539" into the search bar in the top right of the page and click return. T265_10539 is a gene stable ID. These identifiers are allocated by the scientist or group that sequenced and annotated the genome.
+2. Paste "T265_10539" into the search bar in the top right of the page and click return. T265_10539 is a stable (i.e. permanent) identifier for a gene. These identifiers are usually allocated by the scientist or group that sequenced and annotated the genome.
 
 ![](figures/figure_3.2.png)  
 
-You should get one result, matching a gene in *Opisthorchis viverrini*, the Southeast Asian Liver Fluke. Let's look at the page for the T265_10539 gene:
+You should get one result, matching a gene in *Opisthorchis viverrini*, the Southeast Asian liver fluke. Let's look at the page for the T265_10539 gene:
 
 3. Click T265_10539
 
@@ -157,7 +146,7 @@ Every gene in WormBase ParaSite has a gene page, which presents sequence data an
 
 ![](figures/figure_3.3.png)
 
-The gene page has three main sections. In the summary section, together with the description of our gene we can also see the genomic location of the gene ("opera_v5_385", in this case) and the INSDC Sequence ID. This is an identifier that links to an entry for the scaffold in ENA.
+The gene page has three main sections. In the summary section, together with the description of our gene we can also see the genomic location of the gene ("opera_v5_385", in this case) and the INSDC Sequence ID. This is an identifier that links to an entry for the scaffold in the ENA.
 
 Underneath, we can see some information about the gene: it has one transcript isoform and a number of orthologues and paralogues. We’ll revisit this later. We can also see that the gene is protein-coding.
 
@@ -181,6 +170,7 @@ You can learn more about the Genome Browser [here](https://parasite.wormbase.org
 <summary>Sneak peek</summary>
 There is an alternative interactive Genome Browser in WormBase ParaSite that can be accessed by the "View region in Jbrowse" button at the top-right of the gene page but we're going to talk about it in our next module!
 </details>
+<br>
 
 5. Navigate back to the gene page by clicking the "Gene:inx" tab at the top of the page.
 
