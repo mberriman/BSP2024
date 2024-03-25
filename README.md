@@ -1,5 +1,5 @@
-# WormBase ParSite workshop 2nd April 2024
-At the British Society for Parasitology, Spring  Meeting 2024, University of Liverpool
+# WormBase ParaSite workshop
+At the British Society for Parasitology Spring Meeting, 2nd April 2024, University of Liverpool
 
 ## Course Overview
 WormBase ParaSite was established ...
