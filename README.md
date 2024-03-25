@@ -11,5 +11,6 @@ This course aims to teach you...
   
 ## Course Manual
 - [Introductory presentation](presentations/Module_1_WBP_1/Module_1_WBP_1.pptx)<br>Introductory Presentation
-Online Manual
-Answers to Exercises
+- [Part 1](manuals/part1.md)
+- [Part 2](manuals/part2.md)
+- Answers to Exercises
