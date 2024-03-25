@@ -1,0 +1,486 @@
+    1  sudo jamf recon
+    2  sudo jamf policy
+    3  pwd
+    4  cd Data/Schistosome/Sex_chromosomes/
+    5  ls
+    6  grep "CDS" Files_from_Sarah/SM_V9_16Mar_ZSR.gff > ZSR_CDS.gff 
+    7  grep "gene" Files_from_Sarah/SM_V9_16Mar_ZSR.gff > ZSR_gene.gff 
+    8  grep "gene" Files_from_Sarah/SM_V9_16Mar_WSR.gff > WSR_gene.gff 
+    9  ls
+   10  mv gametolog_positions2_act.png gametolog_positions_with_genes2.png
+   11  killall ControlStrip
+   12  jobs
+   13  cd ~
+   14  ls
+   15  cd Documents/Projects/Ritah_SchistoAmplicons/
+   16  ls
+   17  head pool2kb_tailed_primers_30062021.txt 
+   18  grep -c "SM_V7_1" pool2kb_tailed_primers_30062021.txt 
+   19  grep -c "SM_V7_2" pool2kb_tailed_primers_30062021.txt 
+   20  grep -c "SM_V7_3" pool2kb_tailed_primers_30062021.txt 
+   21  grep -c "SM_V7_4" pool2kb_tailed_primers_30062021.txt 
+   22  grep -c "SM_V7_5" pool2kb_tailed_primers_30062021.txt 
+   23  grep -c "SM_V7_6" pool2kb_tailed_primers_30062021.txt 
+   24  grep -c "SM_V7_7" pool2kb_tailed_primers_30062021.txt 
+   25  grep -c "SM_V7_Z" pool2kb_tailed_primers_30062021.txt 
+   26  sudo mdutil -E /
+   27  pwd
+   28  cd ../../../Data/Schistosome/Sex_chromosomes/
+   29  ls
+   30  ls -lrt
+   31  gunzip 20210706_schisto_v9_z_and_w_mRNA_gene_density_wiggle.zip 
+   32  gunzip 20210706_schisto_v9_z_and_w_mRNA_gene_density_wiggle.zip 
+   33  sudo mdutil -E /
+   34  pwd
+   35  cd ../../../Data/Schistosome/Sex_chromosomes/
+   36  ls -lrt
+   37  gunzip 20210706_schisto_v9_z_and_w_mRNA_gene_density_wiggle.zip 
+   38  gunzip 20210706_schisto_v9_z_and_w_mRNA_gene_density_wiggle.zip 
+   39  pwd
+   40  mkdir Blast
+   41  cd Blast
+   42  ls ../Downloads/
+   43  ls -lrt../Downloads/
+   44  ls -lrt ../Downloads/
+   45  cp ../Downloads/ncbi-blast-2.12.0+-x64-macosx.tar.gz .
+   46  pwd
+   47  tar -zxvpf ncbi-blast-2.12.0+-x64-macosx.tar.gz 
+   48  ls -lrt
+   49  cd ncbi-blast-2.12.0+
+   50  more README 
+   51  echo $PATH
+   52  ls /etc
+   53  less /etc/paths
+   54  sudo vi /etc/paths
+   55  sudo vi /etc/paths
+   56  sudo vi /etc/paths
+   57  vi ~/.inputrc
+   58  ls -a  ~/
+   59  source .bashrc
+   60  cd $HOME
+   61  pwd
+   62  source ~/.bashrc
+   63  cd ~/Blast/
+   64  mkdir blastdb
+   65  cd ~
+   66  cd /
+   67  ls -a etc
+   68  ls -a etc/paths
+   69  ls -a etc/paths/
+   70  ls
+   71  ls -a
+   72  ls ets
+   73  ls etc
+   74  lesss etc/bashrc
+   75  less etc/bashrc
+   76  pwd
+   77  cd Blast/ncbi-blast-2.12.0+
+   78  pwd
+   79  cd /
+   80  pwd
+   81  ls
+   82  cd ~
+   83  pwd
+   84  ls
+   85  ls -a
+   86  rm -r ORFS_100+~ 
+   87  rm SM_V9_16Mar_WSR.gff~ 
+   88  ls -a
+   89  touch ~/.bashrc
+   90  ls -a
+   91  vi .bashrc
+   92  echo $ path
+   93  echo $PATH
+   94  vi .bashrc
+   95  ls
+   96  echo $PATH
+   97  vi .bashrc
+   98  pwd
+   99  ls -a
+  100  vi .bashrc
+  101  echo $PATH
+  102  less ~/.bashrc
+  103  vi ~/.bashrc
+  104  ls Blast/
+  105  cd ~/
+  106  ls
+  107  ls -a
+  108  pwd
+  109  cp .bashrc .zshrc
+  110  echo $PATH
+  111  chsh -s /bin/zsh
+  112  echo $PATH
+  113  pwd
+  114  echo $PATH
+  115  zsh
+  116  zsh
+  117  bash
+  118  ls \ 2.H*
+  119  ls \ 2.*
+  120  for gene in noM_geneList.txt; do grep $gene SM_V10_1.gff3; done 
+  121  for gene in noM_geneList.txt; do grep $gene SM_V10_1.gff3 | more; done 
+  122  n noM_geneList.txt; do greSM_V10_1.gff3 | more; done 
+  123  grep -f noM_geneList.txt SM_V10_1.gff3 
+  124  grep -f noM_geneList.txt SM_V10_1.gff3 | grep 'geneID='
+  125  awk '{print $9}' SM_V10_1.gff3 
+  126  awk '{print $9}' SM_V10_1.gff3 > SM_V10_1.gff3_col9
+  127  python --version
+  128  wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/ERZ174/ERZ1740897/EVA_Viney.vcf.gz
+  129  brew install wget
+  130  zsh
+  131  ls -rt
+  132  ./ena-file-download-20230514-1407.sh
+  133  wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/ERZ174/ERZ1740897/EVA_Viney.vcf.gz
+  134  wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/ERZ174/ERZ1740897/EVA_Viney.vcf.gz.tbi
+  135  ls -lrt
+  136  gzip sratti_ed321v504_exported_20230513.vcf
+  137  tabix sratti_ed321v504_exported_20230513.vcf.gz 
+  138  tabix -p vcf sratti_ed321v504_exported_20230513.vcf.gz 
+  139  ls
+  140  ssh
+  141  ls
+  142  clear
+  143  pwd
+  144  cd Downloads/
+  145  head schistosoma_mansoni.PRJEA36577.WBPS18.protein.fa
+  146  cd Desktop/
+  147  awk '{print $5}' study_6275_supplementary_info.txt 
+  148  awk '{print $6}' study_6275_supplementary_info.txt 
+  149  awk '{print $6}' study_6275_supplementary_info.txt | sort| uniq
+  150  clear
+  151  awk '{print $6}' study_6275_supplementary_info.txt | sort| uniq
+  152  awk '{print $6}' study_6275_supplementary_info.txt | sort| uniq > metagenomics_labels.txt
+  153  ssh - Y pcs6
+  154  ssh - Y pcs6
+  155  ssh -Y pcs6
+  156  ssh -Y farm5-login
+  157  ssh -Y ssh.sanger.ac.uk
+  158  ssh -Y farm5-login.sanger.ac.uk
+  159  ssh -Y login.sanger.ac.uk
+  160  cd ../Data/
+  161  cd schistosoma_mansoni/
+  162  mkdir wbps-reference
+  163  cd wbps-reference/
+  164  mkdir masked
+  165  mkdir unmasked
+  166  ls
+  167  ssh pcs6
+  168  ssh pcs6.internal.sanger.ac.uk
+  169  ssh2 -X pcs6
+  170  ssh -X pcs6
+  171  ping sanger.ac.uk
+  172  ssh pcs6.sanger.ac.uk
+  173  ssh -X pcs6
+  174  ssh -X pcs6
+  175  ping farm5-login
+  176  ssh farm5-login
+  177  ls -a
+  178  more .bashrc
+  179  more .ssh
+  180  cd .ssh
+  181  ls
+  182  cd ..
+  183  rm -r .dribble.*
+  184  more .python_history 
+  185  clear
+  186  ssh -v farm5-login
+  187  ping sanger.ac.uk
+  188  ping www.sanger.ac.uk
+  189  sudo xcodebuild -license accept
+  190  sudo xcodebuild -license accept
+  191  ping pcs6
+  192  ssh pcs6
+  193  clear
+  194  ping farm5-login
+  195  ssh farm5-login
+  196  clear
+  197  ssh -v farm5-login
+  198  ssh mars-login.ice.gla.ac.uk
+  199  ssh-keygen
+  200  ssh-copy-id mb599f@mars-login.ice.gla.ac.uk
+  201  ssh mb599f@mars-login.ice.gla.ac.uk
+  202  pwd
+  203  cd Downloads/
+  204  pwd
+  205  ls
+  206  ls -lrt
+  207   cd ~
+  208  pwd
+  209  ssh -v farm5-login
+  210  ssh mars-login.ice.gla.ac.uk
+  211  ssh-keygen
+  212  ssh-copy-id mb599f@mars-login.ice.gla.ac.uk
+  213  ssh mb599f@mars-login.ice.gla.ac.uk
+  214  rsync -avrP /Users/mb4/Downloads/schistosoma_mansoni.PRJEA36577.WBPS15.genomic_masked.fa.gz mb599f@mars-login.ice.gla.ac.uk:~/sharedscratch/
+  215  homebrew
+  216  breww
+  217  brew
+  218  brew install gnuplot
+  219  cd Data
+  220  cd schistosoma_mansoni/
+  221  mummer
+  222  pwd
+  223  cd v10
+  224  ls
+  225  cd ..
+  226  mkdir v7v10
+  227  man scp
+  228  man scp2
+  229  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/out* .
+  230  set terminal
+  231  gnuplot out.gp
+  232  gnuplot set terminal
+  233  gnuplot> set terminal
+  234  brew gnuplot-x11
+  235  gnuplot>
+  236  gnuplot> terminal
+  237  gnuplot> terminal
+  238  cd Data/
+  239  cd schistosoma_mansoni/
+  240  mv out.* v7v10/
+  241  cd v7v10/
+  242  ls
+  243  gnuplot version
+  244  gnuplot> version
+  245  gnuplot
+  246  cd Data/schistosoma_mansoni/v7v10/
+  247  gnuplot
+  248  gnuplot out.gp
+  249  gnuplot
+  250  gnuplot
+  251  gnuplot
+  252  pwd
+  253  cd ~
+  254  pwd
+  255  ls
+  256  cd Library/
+  257  ls
+  258  ssh -X http://www.gnuplot.info
+  259  ssh -X http://www.gnuplot.info
+  260  http://www.gnuplot.info
+  261  ssh -X mb599f@mars-login.ice.gla.ac.uk
+  262  pwd
+  263  cd Data/schistosoma_mansoni/v7v10/
+  264  ls
+  265  more out.gp
+  266  ls -lrt
+  267  head out.fplot 
+  268   head out.gp    
+  269  cp out.gp out-edit.gp
+  270  vi out-edit.gp 
+  271  gnuplot out-edit.gp 
+  272  gnuplot
+  273  gnuplot
+  274  vi out-edit.gp 
+  275  gnuplot out-edit.gp 
+  276  pwd 
+  277  cd ../../..
+  278  pwd
+  279  cd Downloads/
+  280  ls -lrt
+  281  scp schistosoma_mansoni.PRJEA36577.WBPS11.genomic_masked.fa.gz mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch
+  282  cd ../Data/schistosoma_mansoni/v7v10/
+  283  ls
+  284  scp mb599f@mars-login.ice.glas.ac.uk:/users/mb599f/sharedscratch/mummer-schisto-v7-v10/mummer.* .
+  285  scp mb599f@mars-login.ice.glas.ac.uk:/users/mb599f/sharedscratch/mummer-schisto-v7-v10/mummer.* .
+  286  ssh mb599f@mars-login.ice.glas.ac.uk
+  287  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto-v7-v10/mummer.* .
+  288  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/mummer.* .
+  289  vi mummer.gp
+  290  gnuplot mummer.gp
+  291  ls
+  292  vi mummer.gp
+  293  gnuplot mummer.gp
+  294  pwd
+  295  ls /Users/mb4/scripting/
+  296  perl /Users/mb4/scripting/Nucmer.2.circos.pl 
+  297  ssh-copy-id mb599f@mars-login.ice.gla.ac.uk
+  298  gnuplot
+  299  rsync -arvP --remove-source-files mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/out.*
+  300  pwd\
+  301  ls -lrt
+  302  ls out*
+  303  pwd
+  304  cd Data
+  305  ssh -X mb599f@mars-login.ice.gla.ac.uk
+  306  ssh mb599f@mars-login.ice.gla.ac.uk
+  307  ssh -X pcs6
+  308  ssh -X farm5-login
+  309  pwd
+  310  cd Data/schistosoma_mansoni/v7v10/
+  311  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/circos.* .
+  312  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/circos_L* .
+  313  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/L10*/circos* .
+  314  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/L5*/circos* .
+  315  cd ~/Downloads/
+  316  ls -lrt
+  317  mv schistosoma_mansoni.PRJEA36577.WBPS18.genomic.fa.gz schistosoma_mansoni.WBPS18.genomic.fa.gz 
+  318  mv schistosoma_mansoni.PRJEA36577.WBPS15.genomic.fa.gz schistosoma_mansoni.WBPS15.genomic.fa.gz 
+  319  scp schistosoma_mansoni.WBPS1* mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/mummer-schisto_v7-v10
+  320  scp schistosoma_mansoni.WBPS1* mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10
+  321  ssh mb599f@mars-login.ice.gla.ac.uk
+  322  pwd
+  323  cd scripting/
+  324  ls
+  325  scp Nucmer.2.circos.pl mb599f@mars-login.ice.gla.ac.uk
+  326  scp Nucmer.2.circos.pl mb599f@mars-login.ice.gla.ac.uk:/users/mb599f
+  327  clear
+  328  chmod +x Nucmer.2.circos.pl 
+  329  ./Nucmer.2.circos.pl 
+  330  cd ../
+  331  ls
+  332  cd Data/schistosoma_mansoni/
+  333  ls
+  334  cd v7v10/
+  335  ls
+  336  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/circos.* .
+  337  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/circos.* .
+  338  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/circos.* .
+  339  ls -lrt
+  340  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/circos.* .
+  341  pwd
+  342  ssh -X mb599f@mars-login.ice.gla.ac.uk
+  343  cd Data/schistosoma_mansoni/v7v10/
+  344  vi README
+  345  vi README
+  346  cd Data/schistosoma_mansoni/v7v10/
+  347  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/circos* .
+  348  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/circos* .
+  349  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/circos* .
+  350  cd ../../../
+  351  ls
+  352  cd Downloads/
+  353  ls
+  354  ls -lrt
+  355  scp schistosoma_mansoni.PRJEA36577.WBPS11.genomic.fa.gz mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch
+  356  ping pcs6
+  357  ping farm5-login
+  358  ssh -X farm5-login
+  359  pwd
+  360  cd Data/schistosoma_mansoni/v7v10/
+  361  scp mb599f@mars-login.ice.gla.ac.uk:/users/mb599f/sharedscratch/mummer-schisto_v7-v10/circos* .
+  362  ssh farm5-login
+  363  ssh -X mb599f@mars-login.ice.gla.ac.uk
+  364  ssh -X mb599f@mars-login.ice.gla.ac.uk
+  365  pwd
+  366  cd Downloads/
+  367  ls -lrt
+  368  less TriTrypDB-9.0_TbruceigambienseDAL972_AnnotatedProteins.fasta 
+  369  grep -c '>' TriTrypDB-9.0_TbruceigambienseDAL972_AnnotatedProteins.fasta 
+  370  less TriTrypDB-9.0_TbruceigambienseDAL972_AnnotatedProteins.fasta 
+  371  cd Data/schistosoma_mansoni/v7v10/
+  372  gzip schistosoma_mansoni.PRJEA36577.WBPS11.genomic.fa 
+  373  scp schistosoma_mansoni.PRJEA36577.WBPS11.genomic.fa.gz farm5-login
+  374  scp schistosoma_mansoni.PRJEA36577.WBPS11.genomic.fa.gz mb4@farm5-login:.
+  375  scp mb4@farm5-login:./Sm_v7_chr3.fa.gz .
+  376  ls
+  377  grep _3 schistosoma_mansoni.PRJEA36577.WBPS15.annotations.gff3 
+  378  grep V7_3 schistosoma_mansoni.PRJEA36577.WBPS15.annotations.gff3 
+  379  grep -e "SM_V7_3\t" schistosoma_mansoni.PRJEA36577.WBPS15.annotations.gff3 
+  380  grep -e "SM_V7_3\t" schistosoma_mansoni.PRJEA36577.WBPS15.annotations.gff3 > Sm_v7_chr3.gff
+  381  tail Sm_v7_chr3.gff 
+  382  cp Downloads/schistosoma_mansoni.PRJEA36577.WBPS15.annotations.gff3.gz Data/schistosoma_mansoni/v7v10/
+  383  cd Data/schistosoma_mansoni/v7v10/
+  384  ls
+  385  gunzip schistosoma_mansoni.PRJEA36577.WBPS15.annotations.gff3.gz 
+  386  head schistosoma_mansoni.PRJEA36577.WBPS15.annotations.gff3 
+  387  grep SM_V7_3 schistosoma_mansoni.PRJEA36577.WBPS15.annotations.gff3 > Sm_v7_chr.gff
+  388  ls
+  389  ls ~/Downloads/
+  390  cp ~/Downloads/schistosoma_mansoni.PRJEA36577.WBPS11.genomic.fa.gz .
+  391  ls
+  392  ls -lrt
+  393  rm mummer.*
+  394  ls -lrt
+  395  head schistosoma_mansoni.PRJEA36577.WBPS11.genomic.fa.gz 
+  396  clear
+  397  gunzip schistosoma_mansoni.PRJEA36577.WBPS11.genomic.fa.gz 
+  398  ssh -farm5-login
+  399  ssh -X farm5-login
+  400  cd Downloads/
+  401  ls -rt
+  402  gunzip combined_515samples_raw.complete.SNP.filtered.SMP246790.recode.vcf.gz 
+  403  gzip combined_515samples_raw.complete.SNP.filtered.SMP246790.recode.vcf 
+  404  samtools
+  405  ..
+  406  conda
+  407  ls
+  408  rm \~$*
+  409  rm ~\$01018430\ \(1\).docx 
+  410  pwd
+  411  cd ..
+  412  ls
+  413  conda create -n samtools
+  414  conda activate samtools
+  415  conda config --add channels bioconda
+  416  conda config --add channels conda-forge
+  417  conda install -c bioconda samtools
+  418  pwd
+  419  cd Downloads/
+  420  ls
+  421  ls -rt
+  422  bgzip 4pGTrJE72hrZuur2.Consequence_is_missense_variant.vcf 
+  423  tabix -p vcf 4pGTrJE72hrZuur2.Consequence_is_missense_variant.vcf.gz 
+  424  cd Data/schistosoma_mansoni/v7v10/
+  425  ls -lrt
+  426  head Sm_v7_chr3.gff 
+  427  cd Data/schistosoma_mansoni/v7v10/
+  428  cp Sm_v7_chr3.gff Sm_v7_chr3.gff.bkup
+  429  ls -lrt
+  430  vi list.tmp
+  431  awk -F'_' list.tmp 
+  432  more list.tmp 
+  433  awk -F'_' '{print $2}'  list.tmp 
+  434  awk -F'_' '{print $1}'  list.tmp 
+  435  awk -F'_' '{print $1}'  list.tmp | sort | uniq
+  436  awk -F'_' '{print $1}'  list.tmp | sort | uniq -c
+  437  awk -F'_' '{print $1}'  list.tmp | sort | uniq | wc -l
+  438  vi 
+  439  vi my_proteins.txt
+  440  pwd
+  441  cd Downloads/
+  442  ls -rt
+  443  vi Heligmosomoides_polygyrus__PRJEB15396__HPOL_0002040201_paralogues.fa 
+  444  pwd
+  445  cd ../
+  446  ls
+  447  cd Workshops/
+  448  ls
+  449  cd Helminths\ 2021/
+  450  ls
+  451  cd ..
+  452  mkdir Helminths2023
+  453  cd Helminths2023
+  454  ssh pcs6
+  455  scp mb4@pcs6:/
+  456  scp mb4@pcs6:/ limit]
+  457  scp mb4@pcs6:/nfs/users/nfs_s/sd21/lustre_link/teaching_development/Helminth23.vdi.gz .
+  458  cd ~/Downloads/
+  459  git clone https://github.com/mberriman/BSP2024.git
+  460  git clone https://github.com/WCSCourses/HelminthBioinformatics_2023.git
+  461  cd ~/Downloads/
+  462  ls HelminthBioinformatics_2023
+  463  ls HelminthBioinformatics_2023/manuals/
+  464  #cp -r HelminthBioinformatics_2023/manuals/module_1_WBP1 HelminthBioinformatics_2023/manuals/module_3_WBP2 HelminthBioinformatics_2023/manuals/figures BSP2024/manuals
+  465  mkdir BSP2024/manuals
+  466  cp -r HelminthBioinformatics_2023/manuals/module_1_WBP1 HelminthBioinformatics_2023/manuals/module_3_WBP2 HelminthBioinformatics_2023/manuals/figures BSP2024/manuals/
+  467  cd BSP2024/
+  468  ls
+  469  ls manuals/
+  470  ls
+  471  git status
+  472  git add ./
+  473  git commit
+  474  git push
+  475  git push
+  476  vi ~/.git-credentials
+  477  chmod 400 ~/.git-credentials 
+  478  ls -l  ~/.git-credentials 
+  479  chmod 600 ~/.git-credentials 
+  480  ls -l  ~/.git-credentials 
+  481  ls
+  482  git push
+  483  vi ~/.gitconfig
+  484  git push
+  485  history
+  486  history > git_history.txt
