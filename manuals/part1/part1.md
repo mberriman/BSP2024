@@ -532,13 +532,11 @@ Smp_000370
 9. Retrieve (a) a FASTA file with the CDS sequence of each transcript encoded by these genes. Make sure that the transcript stable ID is in the header; and (b) a FASTA file containing the CDS sequence plus 100 nt downstream of the stop codon of each of those transcripts. In the header, include the transcript stable ID and the name of the scaffold that the transcript is on.
 
 ---
-#### Extra BioMart queetions (only if you have time!)
+#### Extra BioMart questions (only if you have time!)
 
 10. Generate a table containing all of the protein coding genes on _Brugia malayi_ scaffold Bm_007. The table should have their gene stable IDs and start and end coordinates.
 11. From this list, export a list of the gene IDs of the genes that have orthologues in _Brugia pahangi_.
 12. Perform a new query and map the Gene IDs of the _Brugia pahangi_ genes identified in question 9 to their UniProt IDs.
-
-___
 13. How many worm pseudogenes are annotated in WBPS? Which worm genomes have annotated pseudogenes?
 
 [↥ **Back to top**](#top)
