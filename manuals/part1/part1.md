@@ -284,9 +284,9 @@ Drag and drop with your mouse over the protein model to rotate it and use your m
 <summary>What can I do with an AlphaFold protein structure?<br>
 To download the raw files for an AlphaFold protein structure you found in WormBase ParaSite:</summary>
 
-<li> 1. Take a note of the AlphaFold accession ID, in our case it's: AF-A0A074Z666-F1</li>
-<li>2. Go to the AlphaFold web-page and search for it (https://alphafold.ebi.ac.uk/entry/A0A074Z666).</li>
-<li>3. At the top of the page you can downlaod the prediction in PDF, mmCIF or Predicted Align Error format.</li>
+- 1. Take a note of the AlphaFold accession ID, in our case it's: AF-A0A074Z666-F1
+- 2. Go to the AlphaFold web-page and search for it (https://alphafold.ebi.ac.uk/entry/A0A074Z666).
+- 3. At the top of the page you can downlaod the prediction in PDF, mmCIF or Predicted Align Error format.
 
 Then you could use the structure file to perform subsequent analyses. Online tools that can be used with the downloaded structures from AlphaFold:
 
