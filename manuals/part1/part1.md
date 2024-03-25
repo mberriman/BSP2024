@@ -38,12 +38,10 @@ In eukaryotes, most protein-coding genes comprise alternating **exons** and **in
 
 ![](figures/figure_3.0.5.png)
 
-This figure represents the steps that are needed to transform information encoded in the DNA into a polypeptide and eventually a functional protein. The starting information is encoded in the genome. A gene encodes, among other things, the transcription start and transcription end. These are the nucleotides from where an RNA copy of the DNA will be generated. This copy is the pre-mRNA which is formed by exons and introns. Maturation of the mRNA molecule happens as it is transcribed and involves the splicing (removal) of introns with the concomitant joining of exons, addition of a CAP at the 5’ end and a polyadenylation tail (many As - AAAAAAA) at the 3’end. A processed mRNA will be the template for the translation of the mRNA message into a protein by the ribosome.
+This figure represents the steps that are needed to transform information encoded in the DNA into a polypeptide and eventually a functional protein. The starting information is encoded in the genome. A gene encodes, among other things, the transcription start and transcription end. Transcription produces an RNA copy of the gene, known as pre-mRNA, which comprises exons and introns. Mature mRNA is produced by splicing together exons, removing introns, adding a CAP at the 5’ end, and polyadenylating the 3’end, to add a poly(A) tail. The mature mRNA is the template for the translation into a polypeptide by the ribosome.
 
 ---
 ### Genomes: the basics  <a name="basics_genomes"></a>
-
-A **genome** is an organism’s complete set of genetic material. Although every individual's genome is unique, the genomes of individuals of the same species will be very similar. It is useful to have a representative genome sequence for each species, and this is referred to as a reference genome. 
 
 In the cell, genomes are organised into chromosomes. In practice, current DNA sequencing methods are unable to read the DNA sequence of a whole chromosome without errors. We therefore use the technique of sequencing shorter segments of chromosomes, and do it in such a way that the segments overlap and can be pieced together like a jigsaw puzzle. This process is referred to as genome assembly. For now, we will focus on what genome assemblies look like, and how they are represented in genome databases. 
 
@@ -51,7 +49,7 @@ The diagram below shows the structure of a typical assembly. It has 3 layers: th
 
 ![](figures/figure_3.0.75.png)
 
-Sometimes, there is insufficient (or no) data to reliably place a scaffold into a specific position on a chromosome. In the figure above, this is true of the scaffold on the right. The assembly above therefore comprises 2 toplevel sequences: 1 chromosome, and one unplaced scaffold.
+Sometimes, there is insufficient (or no) data to reliably place a scaffold into a specific position on a chromosome. In the figure above, this is true of the scaffold on the right. The assembly above therefore comprises 2 top-level sequences: 1 chromosome, and one unplaced scaffold.
 
 ---
 ### Sequence databases <a name="sequence_databases"></a>
@@ -73,7 +71,7 @@ WormBase ParaSite takes sequencing data from INSDC (a genome assembly and a set 
 
 In this section, we’ll explore how genome assemblies are presented in WormBase ParaSite, and look at some commonly used metrics of assembly quality.
 
-Earlier, we introduced the idea that a genome assembly is constructed from shorter segments of sequence, pieced back together in the right order. In an ideal world the assembly would be constructed back into chromosomes. Many of the genomes in WormBase ParaSite are much more fragmented than this; this means that a chromsome might actually be represented by hundreds or even thousands of smaller stretches of sequence (scaffolds or contigs). Having a more fragmented genome makes identifying genes much more challenging, as gene models are more likely to be split across scaffolds. 
+In an ideal world, each genome assembly would fully reconstruct contiguous chromosomes. Many of the genomes in WormBase ParaSite are much more fragmented than this; a chromosome might actually be represented by hundreds or even thousands of smaller scaffolds or contigs. Having a more fragmented genome makes identifying genes much more challenging, as gene models are more likely to be split across scaffolds. 
 
 1. From the WormBase ParaSite homepage, click either the ”Genome List” tab in the tools bar, or the “Genomes” icon.
 
@@ -101,7 +99,7 @@ The genome page has useful summary information about the species and the assembl
 ![](figures/figure_4.4.png)
 
 The information in this box tells us about two metrics related to the quality of the assembly: contiguity and completeness.<br>
-- **Contiguity** describes how many scaffolds a genome is represented by: in a perfectly contiguous reference genome, the number of scaffolds would be equal to the number of chromosomes. Contiguity is described by several values, including the total number of scaffolds in the assembly, the length of the longest scaffold, the N50 length and the N90 length. If all of the scaffolds of the assembly were lined up in order of longest to shortest, the N50 length is the length of the scaffold at the midpoint. Similarly, the N90 length is the length of the scaffold at the 90th percentile. For a given genome, a larger N50 length and N90 length generally indicate a more contiguous assembly. 
+- **Contiguity** describes how many scaffolds a genome is represented by: in a perfectly contiguous reference genome, the number of scaffolds would be equal to the number of chromosomes. Contiguity is described by several values, including the total number of scaffolds in the assembly, the length of the longest scaffold, the N50 and the N90. The N50 describes the midpoint of the assembly, such that, if all of the scaffolds of the assembly were lined up in size order, the N50 is the length of the scaffold above which 50% of the bases are found. Similarly, 90% of bases are found in scaffolds greater than or equal to the N90 length. For a given genome, larger N50 and N90 lengths therefore indicate more contiguous assemblies. 
    <br>
    <br>
    In the “Assembly statistics” widget, the circumference of the circle represents the whole genome assembly, with scaffolds ordered from longest to shortest. The diameter of the grey colour represents the length of the scaffold represented at each point of the circle. The light grey shading represents the N90 scaffold, whilst the dark grey shading represents the N50 scaffold. The light blue outer ring shows the GC/AT/N percentage of the scaffold.
