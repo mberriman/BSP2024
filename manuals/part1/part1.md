@@ -89,7 +89,7 @@ Table Features:
 
 ![](figures/figure_4.2.png)
 
-2. Scroll down the page to find _Brugia malayi_ and click the species name link- this will take you to the _B. malayi_ genome landing page.
+2\. Scroll down the page to find _Brugia malayi_ and click the species name link- this will take you to the _B. malayi_ genome landing page.
 
 ![](figures/figure_4.3.png)
 
