@@ -736,59 +736,57 @@ Let’s say you want to see in which life stages Smp_312440 is expressed:
 
 As well as looking at publicly available data, you can use WormBase ParaSite JBrowse to visualise your own data.
 
-We’ll demonstrate how to do this using a local BAM file that we have provided for you.
+We’ll demonstrate how to do this using a local BAM file.
 
-**BAM file?**
-A BAM file is a type of file format used in genomics to store DNA sequencing data in a compressed and indexed manner.
-
-In the module 3 data directory you should find a file named SRR3223448.bam. 
-
-As a BAM file, this file is binary, so trying to read it as it is won’t be very informative. To read it we should first convert it into the SAM file format (non-binary, human-readable). We can do that with samtools:
+<details closed>
+<summary>**What is a BAM file?**
+It's a file format used in genomics to store DNA sequencing reads alignment to a reference sequence. It is compressed and indexed, so that it is quick to access computationally.<br>
+   <br>
+Trying to read a BAM file won't be very informative because it's binary. It need to first be converted into the SAM file format (non-binary, human-readable). We can do that with samtools:</summary>
 
 - [Samtools](http://www.htslib.org/doc/samtools.html) is a useful software package for manipulating SAM and BAM files.
 - We will use a samtools command to convert the BAM file to a SAM file so we can have a look at how it’s structured. Move to the module 3 data directory and type the following into your terminal:
 
 ```bash
-samtools view -h SRR3223448.bam | less
+samtools view -h your_file.bam | less
 ```
 
 <details closed>
 <summary> <- Click here to read more about the BAM and SAM file formats at your own time.</summary>
+   
 The SAM file starts with a header section. All header lines begin with a ‘@’ character.
 
 ![](figures/jbrowse_10.png)
 
-Move down through the file (by pressing the space bar) until you come to the alignment section. Here, each line represents a sequencing read (though be aware that the lines are long, so a single line will probably wrap around your terminal window a few times). Some of the key fields are labelled below:
+Moving down through the file (by pressing the space bar) you come to the alignment section. Here, each line represents a sequencing read (though be aware that the lines are long, so a single line will probably wrap around your terminal window a few times). Some of the key fields are labelled below:
 
 ![](figures/jbrowse_11.png)
 
 The full SAM specification is available here: http://samtools.github.io/hts-specs/
 
-Before we can visualise the file in JBrowse, we need to create an index. An index is another file that often accompanies a BAM file, and acts like a table of contents. Software such as JBrowse can look inside the index file and find where exactly in the corresponding BAM file it needs to look, without having to go through all of the reads (which would be computationally very expensive).
+Before the file can be visualized in JBrowse, an index needs to be created. An index is another file that often accompanies a BAM file, and acts like a table of contents. Software such as JBrowse can look inside the index file and find where exactly in the corresponding BAM file it needs to look, without having to go through all of the reads (which would be computationally very expensive).
 
-BAM index files should have exactly the same name as their corresponding BAM file, with the addition of a .bai suffix. We can index our BAM file using samtools. Type:
+BAM index files should have exactly the same name as their corresponding BAM file, with the addition of a .bai suffix. You can index a BAM file using samtools. Type:
 
 ```bash
-samtools index SRR3223448.bam
+samtools index your_file.bam
 ```
 
-You should now see a file called SRR3223448.bam.bai in your working directory. We can now load the file into WormBase ParaSite JBrowse.
+You should now see a file called your_file.bam.bai in your working directory. We can now load the file into WormBase ParaSite JBrowse.
 
 ![](figures/jbrowse_12.png)
 </details>
 <br>
 
-We can only add an indexed BAM file to Jbrowse (BAM file accompanied by a file with the same name with the addition of a .bai suffix). The BAM file in the directory is already indexed (You should see a file called SRR3223448.bam.bai in your working directory.)
-
-11. To add the BAM track to our Jbrowse instance:
+We can only add an indexed BAM file to Jbrowse. To add a BAM track to Jbrowse :
     - select the “Track” menu option in the top left of the screen.
     - Selecting “Open track file or URL” will open a dialogue box giving you an option to view a file that is either on your file system, or accessible via a URL.
     - Select both the BAM file and the index file. JBrowse guesses the file type from the name, but we have an option to correct it if it gets it wrong. We can see that it’s right this time.
     - Click “Open”.
 
-Now we can see the reads aligned to the genome. Notice that this RNA-Seq data is stranded- this means that the library preparation protocol preserved information on which end of the RNA molecule was 5-prime and which end was 3-prime, so we can infer which strand of DNA it was transcribed from. This information is encoded in the BAM file, and JBrowse colours the reads accordingly:
-- reads aligning to the forward strand are $\textcolor{pink}{\textsf{pink}}$
-- and reads aligning to the reverse strand are $\textcolor{purple}{\textsf{purple}}$
+In the demonstrated example, you can see the reads aligned to the genome. Notice that this RNA-Seq data is stranded- this means that the library preparation protocol preserved information on which end of the RNA molecule was 5-prime and which end was 3-prime, so we can infer which strand of DNA it was transcribed from. This information is encoded in the BAM file, and JBrowse colours the reads accordingly:
+- reads aligning to the forward strand are pink
+- and reads aligning to the reverse strand are blue/purple
 
 [↥ **Back to top**](#top)
 
