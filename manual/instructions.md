@@ -20,13 +20,13 @@
 5. [BioMart](#biomart)
     * [EXERCISE](#biomart_exercise)
 
-## Overview and Aims <a name="intro"></a>
+## 1. Overview and Aims <a name="intro"></a>
 We'll start by reviewing the basics on genes and genomes: what they are, how we represent and talk about them, and how we go from a DNA sequence- a string of letters- to making predictions about gene function. We'll look at this in the context of WormBase ParaSite and other online database resources. 
 
 WormBase ParaSite gathers together nematode and flatworm genomes that have been assembled and annotated by the research community, adds additional analyses and makes these data available to the scientific community. We'll look at the kind of data you can retrieve, initially by exploring the website. In the last part of the module we'll introduce BioMart. This is a data-mining tool that allows you to retrieve WormBase ParaSite data in bulk.
 
 ---
-## Genes and Genomes  <a name="genes_and_genomes"></a>
+## 2. Genes and Genomes  <a name="genes_and_genomes"></a>
 
 Throughout this course, we'll assume that you're familiar with genes and genomes. 
 
@@ -67,7 +67,7 @@ WormBase ParaSite takes sequencing data from INSDC (a genome assembly and a set 
 [↥ **Back to top**](#top)
 
 ---
-## Looking at genomes in WormBase ParaSite <a name="wbps_genomes"></a>
+## 3. Looking at genomes in WormBase ParaSite <a name="wbps_genomes"></a>
 
 In this section, we’ll explore how genome assemblies are presented in WormBase ParaSite, and look at some commonly used metrics of assembly quality.
 
@@ -121,7 +121,7 @@ The information in this box tells us about two metrics related to the quality of
 2\. According to their scaffold statistics and BUSCO scores, which of these two assemblies is more contiguous and complete?
 
 ---
-## Looking at genes in WormBase ParaSite <a name="wbps_genes"></a>
+## 4. Looking at genes in WormBase ParaSite <a name="wbps_genes"></a>
 For each genome in WormBase ParaSite, there are gene and transcript pages available for browsing. The aim of this section is to familiarise you with retrieving information about a gene of interest from WormBase ParaSite.
 
 ### The Gene Page <a name="gene_page"></a>
