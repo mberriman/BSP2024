@@ -1330,8 +1330,10 @@ Use the 24-hour-schistosomule-vs-cercariae.tsv from the previous section and pri
 2. Which are the 3 most significantly enriched Cellular Component terms? Are they relevant to this developmental stage comparion we're performing?
 
 3. Expand the stats by using the ">>" in the header of the GO:CC result table. Try to interpret the T, Q, TnQ and U metrics. What do they represent?
+
     <details closed>
     <summary>Help!</summary>
+       
     You can read more here: https://biit.cs.ut.ee/gprofiler/page/docs<br>
    * T - Term Size: How many S. mansoni genes are in general associated with this term.<br>
    * Q - Query Size: The number of genes in our gene list (the one we run the analysis for). In our case this number should theoretically be 40, however it is 14, why?<br>
