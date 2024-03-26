@@ -740,9 +740,9 @@ We’ll demonstrate how to do this using a local BAM file.
 
 <details closed>
 <summary>**What is a BAM file?**
-It's a file format used in genomics to store DNA sequencing reads alignment to a reference sequence. It is compressed and indexed, so that it is quick to access computationally.<br>
-   <br>
-Trying to read a BAM file won't be very informative because it's binary. It need to first be converted into the SAM file format (non-binary, human-readable). We can do that with samtools:</summary>
+It's a file format used in genomics to store DNA sequencing reads alignment to a reference sequence. It is compressed and indexed, so that it is quick to access computationally.</summary>
+   
+Trying to read a BAM file won't be very informative because it's binary. It need to first be converted into the SAM file format (non-binary, human-readable). We can do that with samtools:
 
 - [Samtools](http://www.htslib.org/doc/samtools.html) is a useful software package for manipulating SAM and BAM files.
 - We will use a samtools command to convert the BAM file to a SAM file so we can have a look at how it’s structured. Move to the module 3 data directory and type the following into your terminal:
@@ -775,6 +775,7 @@ samtools index your_file.bam
 You should now see a file called your_file.bam.bai in your working directory. We can now load the file into WormBase ParaSite JBrowse.
 
 ![](figures/jbrowse_12.png)
+</details>
 </details>
 <br>
 
