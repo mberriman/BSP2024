@@ -782,10 +782,10 @@ You should now see a file called your_file.bam.bai in your working directory. We
 
 We can only add an indexed BAM file to Jbrowse. To add a BAM track to Jbrowse :
 
-    - select the “Track” menu option in the top left of the screen.
-    - Selecting “Open track file or URL” will open a dialogue box giving you an option to view a file that is either on your file system, or accessible via a URL.
-    - Select both the BAM file and the index file. JBrowse guesses the file type from the name, but we have an option to correct it if it gets it wrong. We can see that it’s right this time.
-    - Click “Open”.
+- select the “Track” menu option in the top left of the screen.
+- Selecting “Open track file or URL” will open a dialogue box giving you an option to view a file that is either on your file system, or accessible via a URL.
+- Select both the BAM file and the index file. JBrowse guesses the file type from the name, but we have an option to correct it if it gets it wrong. We can see that it’s right this time.
+- Click “Open”.
 
 In the demonstrated example, you can see the reads aligned to the genome. Notice that this RNA-Seq data is stranded- this means that the library preparation protocol preserved information on which end of the RNA molecule was 5-prime and which end was 3-prime, so we can infer which strand of DNA it was transcribed from. This information is encoded in the BAM file, and JBrowse colours the reads accordingly:
 
@@ -799,7 +799,7 @@ In the demonstrated example, you can see the reads aligned to the genome. Notice
 
 Another WormBase ParaSite tool that we will look at today is the Variant Effect Predictor, or VEP.
 
-A common approach to understanding the genetic basis of phenotypic differences is to identify genetic variants that are overrepresented in some populations of individuals.
+A common approach to understanding the genetic basis of phenotypic differences is to identify genetic variants that are over-represented in some populations of individuals.
 
 For example, you might sequence two populations of worm: one that is susceptible to a drug and one that is resistant to the drug. You could then identify genomic positions where each of these populations differs from the reference genome.
 
@@ -816,7 +816,7 @@ You can download complete studies from the "Study Browser" tab but today we are 
 
 ![](figures/eva_1.png)
 
-3. Download the first 250kb of S. ratti chromosome 2 and place it inside the "Module_3_WormBaseParaSite_2" directory:
+3. Download the first 250kb of S. ratti chromosome 2:
   - Select "Rat threadworm / S_ratti_ED321" from the Organism/Assembly drop-down menu.
   - Filter by: Chromosomal Location - Region: SRAE_chr2:1-250000 and then click "Search".
   - Click "Export as VCF" and place the downloaded file inside the "Module_3_WormBaseParaSite_2" directory.
