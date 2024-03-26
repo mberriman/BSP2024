@@ -781,12 +781,14 @@ You should now see a file called your_file.bam.bai in your working directory. We
 <br>
 
 We can only add an indexed BAM file to Jbrowse. To add a BAM track to Jbrowse :
+
     - select the “Track” menu option in the top left of the screen.
     - Selecting “Open track file or URL” will open a dialogue box giving you an option to view a file that is either on your file system, or accessible via a URL.
     - Select both the BAM file and the index file. JBrowse guesses the file type from the name, but we have an option to correct it if it gets it wrong. We can see that it’s right this time.
     - Click “Open”.
 
 In the demonstrated example, you can see the reads aligned to the genome. Notice that this RNA-Seq data is stranded- this means that the library preparation protocol preserved information on which end of the RNA molecule was 5-prime and which end was 3-prime, so we can infer which strand of DNA it was transcribed from. This information is encoded in the BAM file, and JBrowse colours the reads accordingly:
+
 - reads aligning to the forward strand are pink
 - and reads aligning to the reverse strand are blue/purple
 
