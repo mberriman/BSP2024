@@ -738,8 +738,8 @@ As well as looking at publicly available data, you can use WormBase ParaSite JBr
 
 We’ll demonstrate how to do this using a local BAM file.
 
-<details closed>
-<summary>**What is a BAM file?**</summary>
+<details>
+<summary>What is a BAM file?</summary>
    
 It's a file format used in genomics to store DNA sequencing reads alignment to a reference sequence. It is compressed and indexed, so that it is quick to access computationally.
    
@@ -751,8 +751,8 @@ Trying to read a BAM file won't be very informative because it's binary. It need
     ```bash
     samtools view -h your_file.bam | less
     ```
-
-<details closed>
+<br>
+<details>
 <summary>Click here to read more about the BAM and SAM file formats</summary>
    
 The SAM file starts with a header section. All header lines begin with a ‘@’ character.
