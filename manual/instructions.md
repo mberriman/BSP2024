@@ -816,12 +816,12 @@ You can download complete studies from the "Study Browser" tab but today we are 
 
 ![](figures/eva_1.png)
 
-3. Download the first 250kb of S. ratti chromosome 2:
+3\. Download the first 250kb of S. ratti chromosome 2:
   - Select "Rat threadworm / S_ratti_ED321" from the Organism/Assembly drop-down menu.
   - Filter by: Chromosomal Location - Region: SRAE_chr2:1-250000 and then click "Search".
   - Click "Export as VCF" and place the downloaded file inside the "Module_3_WormBaseParaSite_2" directory.
 
-4. Move to the "Module_3_WormBaseParaSite_2" directory and have a look at the file to see how it is structured:
+4\. Move to the "Module_3_WormBaseParaSite_2" directory and have a look at the file to see how it is structured:
 
 ```bash
 # look at the contents
@@ -832,33 +832,34 @@ You'll have to scroll down beyond the headers (lines starting with ##) to see th
 
 ![](figures/vep_1.png)
 
-5. From the WormBase ParaSite homepage, select “Tools” from the toolbar.
-6. From the “Tools” page, select Variant Effect Predictor
-7. To submit a VEP job, just select the correct species (_Strongyloides ratti_), upload the VCF file we just downloaded and click “Run”.
+5\. From the WormBase ParaSite homepage, select “Tools” from the toolbar.
+6\. From the “Tools” page, select Variant Effect Predictor
+7\. To submit a VEP job, just select the correct species (_Strongyloides ratti_), upload the VCF file we just downloaded and click “Run”.
 
 ![](figures/vep_2.png)
 
-8. Once you have clicked "Run", your input will be checked and submitted to the VEP as a job. All jobs associated with your session or account are shown in the "Recent Tickets" table. You may submit multiple jobs simultaneously.
+8\. Once you have clicked "Run", your input will be checked and submitted to the VEP as a job. All jobs associated with your session or account are shown in the "Recent Tickets" table. You may submit multiple jobs simultaneously.
 
-9. Navigate to the results page:
+9\. Navigate to the results page:
 
 ![](figures/vep_3.png)
 
 The results are presented in pie-charts and an interactive table:
+
 - Pie Charts: The pie charts give a summary of the consequences of the variants found in the file. Variants with coding consequences are found in the protein-coding sequence of genes, whilst variants with non-coding consequences are in intergenic regions or non-coding regions of genes. These variants could still be functionally important; for example, variants in non-coding regions near genes can have effects on expression dynamics.
 - Results Table: The results table shows one row per transcript and variant. By default all of the columns are shown; to temporarily hide columns, click the blue "Show/hide columns" button and select or deselect the columns you wish to view. The columns you select will be recalled when viewing other jobs.
 
-10. You can explore the results interactively on the webpage using the Results Preview filter panel at the centre. Use this panel and filter for variant that cause (select "consequence") changes to amino acids (select "missense_variant").  
+10\. You can explore the results interactively on the webpage using the Results Preview filter panel at the centre. Use this panel and filter for variant that cause (select "consequence") changes to amino acids (select "missense_variant").  
 
 You can actually visualise the affected Amino acid by the "missense_variant" on the protein's 3D AlphaFold model ([We talked about these in our previous WBP module](https://github.com/WCSCourses/HelminthBioinformatics_2023/blob/main/manuals/module_1_WBP1/module_1_WBP1.md#af)).
 
 To do this:
 
-11. Go to the "Protein matches" column of the results table. If the "Protein matches" column has not been switched on you can do so by using the "Show/hide columns" button at the top left of the table". If the protein affected by the "missense_variant" has an AlphaFold protein model available, then you should see an "AlphaFold model" button in the "Protein matches" column. Click it.
+11\. Go to the "Protein matches" column of the results table. If the "Protein matches" column has not been switched on you can do so by using the "Show/hide columns" button at the top left of the table". If the protein affected by the "missense_variant" has an AlphaFold protein model available, then you should see an "AlphaFold model" button in the "Protein matches" column. Click it.
 
 ![](figures/vep_4.png)
 
-12. Explore the 3D protein model. You can  Click the "Focus" button underneath the variant information to zoom-in to the affected residue.
+12\. Explore the 3D protein model. You can  Click the "Focus" button underneath the variant information to zoom-in to the affected residue.
 
 ![](figures/vep_5.png)
 
@@ -876,9 +877,9 @@ Download the VEP results from the example above as a “VEP file”. Use this fi
 
 4. Create a list of genes where a missense variant is found.  
 
-5. Find out which genes has the highest number of missense mutations.  View the distribution of variants along the coding sequence in Jbrowse.
+5. Find out which genes has the highest number of missense mutations.
 
-Hint: to view the VCF in JBrowse you first need to compress and index it. Do:
+It is possible to view the distribution of variants along the coding sequence in Jbrowse. To view the VCF in JBrowse, you first need to compress and index using 'tabix', a generalised indexer of tab-delimited files from the samtools package
 
 ```bash
 bgzip file.vcf && tabix -p vcf file.vcf.gz
@@ -1230,7 +1231,7 @@ This means that if somebody has already conducted a study to compare the conditi
 
 ![](figures/expression_1.png)
 
-2. We can see a summary of the different studies that have been conducted. We're interested in life cycle stages, so select the first study "Schistosoma mansoni transcriptomics at different life stages". 
+2\. We can see a summary of the different studies that have been conducted. We're interested in life cycle stages, so select the first study "Schistosoma mansoni transcriptomics at different life stages". 
 
 ![](figures/expression_2.png)
 
@@ -1247,7 +1248,7 @@ Several files are available for download. These are:
     - Full results files: each of these files contain the full DESeq2 results for a contrast (i.e., fold changes for ALL genes, whether or not they are statistically significant).
 
 
-3. Download the full results files for the "Schistosoma mansoni transcriptomics at different life stages" "24-hour-schistosomule-vs-cercariae" experiment by clicking "Full result files for 3 contrasts (zipped) and place it into the "Module_3_WormBaseParaSite_2" directory.
+3\. Download the full results files for the "Schistosoma mansoni transcriptomics at different life stages" "24-hour-schistosomule-vs-cercariae" experiment by clicking "Full result files for 3 contrasts (zipped) and place it into the "Module_3_WormBaseParaSite_2" directory.
 
 ```bash
 cd ~/Module_3_WormBaseParaSite_2
@@ -1264,17 +1265,17 @@ grep -v "^#" 24-hour-schistosomule-vs-cercariae.tsv | less
 
 Use some of the commands you learned yesterday to extract the following information from the "24-hour-schistosomule-vs-cercariae.tsv" file:
 
-4. Extract the top 5 most significantly regulated genes (hint: the final column, "padj", gives the adjusted p value. A smaller adjusted p value = more significant).
+4\. Extract the top 5 most significantly regulated genes (hint: the final column, "padj", gives the adjusted p value. A smaller adjusted p value = more significant).
 
 ```bash
 grep -v "^#" 24-hour-schistosomule-vs-cercariae.tsv | grep -v "^gene_id" | sort -g -k 7,7 | awk -F'\t' '$7 != "NA"' | head -n 5
 ```
 
-5. Of the genes with an adjusted p-value that is less than 0.05, which is (a) most highly upregulated in the 24h schistosomules v the cercariae (b) most strongly upregulated in the cercariae v the 24h schistosomules?
+5\. Of the genes with an adjusted p-value that is less than 0.05, which is (a) most highly upregulated in the 24h schistosomules v the cercariae (b) most strongly upregulated in the cercariae v the 24h schistosomules?
+
 ```bash
 # upregulated in the 24h schistosomules means tha Log2FoldChange (column 3) should be a positive number
 grep -v "^#" 24-hour-schistosomule-vs-cercariae.tsv | grep -v "^gene_id" | awk -F'\t' '$7 != "NA" && $7 < 0.05 && $3 > 0' | sort -r -g -k 3,3 | head -n 10
-
 
 # upregulated in the cercariate means tha Log2FoldChange (column 3) should be a negative number
 grep -v "^#" 24-hour-schistosomule-vs-cercariae.tsv | grep -v "^gene_id" | awk -F'\t' '$7 != "NA" && $7 < 0.05 && $3 < 0' | sort -g -k 3,3 | head -n 10
@@ -1289,7 +1290,7 @@ Gene set enrichment analysis (GSEA) (also called functional enrichment analysis 
 
 ![image](https://user-images.githubusercontent.com/33452269/203346104-4ebe92bf-65c3-44d3-8e16-8bf4cd3342f8.png)
 
-In the previous module we talked about Gene Ontology (GO) [here](https://github.com/WCSCourses/HelminthBioinformatics_2023/blob/wbps_edits/manuals/module_1_WBP1/module_1_WBP1.md#go_terms).
+Earlier, we talked about Gene Ontology (GO) [here](https://github.com/WCSCourses/HelminthBioinformatics_2023/blob/wbps_edits/manuals/module_1_WBP1/module_1_WBP1.md#go_terms).
 
 "Gene Ontology" enrichment analysis is one of the most commonly used enrichment analyses.
 
