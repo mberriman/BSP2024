@@ -1247,11 +1247,10 @@ Several files are available for download. These are:
     - Summary files: for each combination of variables for which comparisons have been calculated, this file contains the genes that show a significant difference in at least one comparison. 
     - Full results files: each of these files contain the full DESeq2 results for a contrast (i.e., fold changes for ALL genes, whether or not they are statistically significant).
 
-
-3\. Download the full results files for the "Schistosoma mansoni transcriptomics at different life stages" "24-hour-schistosomule-vs-cercariae" experiment by clicking "Full result files for 3 contrasts (zipped) and place it into the "Module_3_WormBaseParaSite_2" directory.
+3\. Download the full results files for the "Schistosoma mansoni transcriptomics at different life stages" "24-hour-schistosomule-vs-cercariae" experiment by clicking "Full result files for 3 contrasts (zipped)" and place it into the "Downloads" directory.
 
 ```bash
-cd ~/Module_3_WormBaseParaSite_2
+cd ~/Downloads
 
 # Extract the compressed directory
 unzip ERP000427.de.contrasts.zip
@@ -1291,6 +1290,8 @@ Gene set enrichment analysis (GSEA) (also called functional enrichment analysis 
 ![image](https://user-images.githubusercontent.com/33452269/203346104-4ebe92bf-65c3-44d3-8e16-8bf4cd3342f8.png)
 
 Earlier, we talked about Gene Ontology (GO) [here](https://github.com/WCSCourses/HelminthBioinformatics_2023/blob/wbps_edits/manuals/module_1_WBP1/module_1_WBP1.md#go_terms).
+
+[here](https://github.com/mberriman/BSP2024/edit/main/manual/instructions.md#go_terms)
 
 "Gene Ontology" enrichment analysis is one of the most commonly used enrichment analyses.
 
