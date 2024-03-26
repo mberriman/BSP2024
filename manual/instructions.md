@@ -671,9 +671,9 @@ There are several commonly used genome browsers in bioinformatics, each with dif
 
 * Ensembl - this can be used to browse a large catalog of genomes across the tree of life. WormBase ParaSite has an instance of the Ensembl browser built in, and [we explored it in Module 1](https://github.com/WCSCourses/HelminthBioinformatics_2023/blob/main/manuals/module_1_WBP1/module_1_WBP1.md#genome_browser). 
 
-* [JBrowse 1](https://jbrowse.org/jbrowse1.html) - this is the genome browser that we’ll be using today. WormBase ParaSite has an instance of JBrowse for every genome that it hosts. The Apollo project is a well known extension of JBrowse, which, like Artemis, can be used to edit gene models.
+* [JBrowse 1](https://jbrowse.org/jbrowse1.html) - this is the genome browser that we’ll be using today. WormBase ParaSite has an instance of JBrowse for every genome that it hosts. The Apollo project is a well known extension of JBrowse, which can be used to edit gene models.
 
-There are many other genome browsers for different needs out there. Feel free to explore them at your own time:n[Integrative Genomics Viewer (IGV)](https://igv.org/),[UCSC Genome Browser](https://genome.ucsc.edu/),[Artemis/Artemis Comparison Tool (ACT)](https://www.sanger.ac.uk/tool/artemis-comparison-tool-act/) and the new version of Jbrowse: [Jbrowse 2](https://jbrowse.org/jb2/) 
+There are many other genome browsers for different needs out there. Feel free to explore them at your own time:[Integrative Genomics Viewer (IGV)](https://igv.org/), [UCSC Genome Browser](https://genome.ucsc.edu/), and the [new version of Jbrowse](https://jbrowse.org/jb2/) 
 
 #### Using JBrowse: basic functionality
 
@@ -690,7 +690,7 @@ In this example we’ll introduce the basic functionality of WormBase ParaSite's
 For this example, we’ll consider that you’re interested in the gene Smp_312440.
 
 2. Start by typing the identifier into the search box and clicking “Go” to navigate to the gene. 
-3. Zoom in by clicking the large magnifying glass with a “+” symbol until the reference sequence resolves.
+3. Zoom in by clicking the large magnifying glass with a “+” symbol until you can see the reference sequence.
 
 ![](figures/jbrowse_2.png)
 
@@ -718,10 +718,7 @@ We can also use JBrowse to view other types of data aligned to the genome.
 
 ![](figures/jbrowse_5.png)
 
-For most species, in addition to the gene model (“Genome Annotation”) track, there are two additional main types of track:
-
-- Repeat regions tracks - repetitive regions of the genome are annotated as part of WormBase ParaSite’s production process. 
-- RNASeq tracks - WormBase ParaSite has a process of finding and aligning RNASeq data in the sequencing archives for our species of interest. These can be useful, for example, for checking that a gene model is well supported by expression data, or seeing in which life stages, or under which conditions, a gene of interest is transcribed. 
+For most species, in addition to the gene model (“Genome Annotation”) track, there are RNASeq tracks. WormBase ParaSite finds and aligs RNASeq data in the ENA for our species of interest. These can be useful, for example, for checking that a gene model is well supported by expression data, or seeing in which life stages, or under which conditions, a gene of interest is transcribed. 
   - For species with a lot of publicly available RNA-Seq data, such as _S. mansoni_, the easiest way to explore the samples that are available is by using the facets on the left hand side. The samples are organised by their metadata.
 
 Let’s say you want to see in which life stages Smp_312440 is expressed:
@@ -739,7 +736,7 @@ Let’s say you want to see in which life stages Smp_312440 is expressed:
 
 As well as looking at publicly available data, you can use WormBase ParaSite JBrowse to visualise your own data.
 
-We’ll demonstrate how to do this using a BAM file that we have provided for you.
+We’ll demonstrate how to do this using a local BAM file that we have provided for you.
 
 **BAM file?**
 A BAM file is a type of file format used in genomics to store DNA sequencing data in a compressed and indexed manner.
