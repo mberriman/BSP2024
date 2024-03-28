@@ -34,8 +34,6 @@ BREAK
       * [EXERCISE](#vep_exercise)
 8. [Accessing WormBase ParaSite data programmatically](#programmatic_access)
     * [Working with sequence and annotation files](#files)
-    * [The REST API](#api)
-      * [EXERCISE](#api_exercises)
 9. [The WormBase ParaSite Expression browser](#expression_data)
       * [EXERCISE](#expression_exercise)
 10. [Gene-set enrichment analysis](#gene-set)
