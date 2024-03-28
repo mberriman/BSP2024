@@ -1,6 +1,7 @@
 # WormBase ParaSite
 
 ## Table of contents
+PART ONE
 1. [Overview and Aims](#intro)
 2. [Genes and genomes](#genes_and_genomes)
     * [Genes: the basics](#basics_genes)
@@ -19,6 +20,7 @@
     * [EXERCISE](#gene_page_exercise)
 5. [BioMart](#biomart)
     * [EXERCISE](#biomart_exercise)
+      BREAK
 
 ## 1. Overview and Aims <a name="intro"></a>
 We'll start by reviewing the basics on genes and genomes: what they are, how we represent and talk about them, and how we go from a DNA sequence- a string of letters- to making predictions about gene function. We'll look at this in the context of WormBase ParaSite and other online database resources. 
