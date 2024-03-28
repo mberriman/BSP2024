@@ -2,7 +2,7 @@
 
 ## Table of contents
 
-PART ONE
+(PART ONE)
 1. [Overview and Aims](#intro)
 2. [Genes and genomes](#genes_and_genomes)
     * [Genes: the basics](#basics_genes)
@@ -24,6 +24,7 @@ PART ONE
 
 BREAK
 
+(PART TWO)
 6. [Overview and Aims](#aims)
 7. [Tools](#tools)
     * [BLAST](#blast)
