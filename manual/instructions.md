@@ -1,6 +1,7 @@
 # WormBase ParaSite
 
 ## Table of contents
+
 PART ONE
 1. [Overview and Aims](#intro)
 2. [Genes and genomes](#genes_and_genomes)
@@ -20,7 +21,24 @@ PART ONE
     * [EXERCISE](#gene_page_exercise)
 5. [BioMart](#biomart)
     * [EXERCISE](#biomart_exercise)
-      BREAK
+
+BREAK
+
+6. [Overview and Aims](#aims)
+7. [Tools](#tools)
+    * [BLAST](#blast)
+      * [EXERCISE](#blast_exercise)
+    * [The genome browser](#genome_browser)
+    * [VEP](#vep)
+      * [EXERCISE](#vep_exercise)
+8. [Accessing WormBase ParaSite data programmatically](#programmatic_access)
+    * [Working with sequence and annotation files](#files)
+    * [The REST API](#api)
+      * [EXERCISE](#api_exercises)
+9. [The WormBase ParaSite Expression browser](#expression_data)
+      * [EXERCISE](#expression_exercise)
+10. [Gene-set enrichment analysis](#gene-set)
+      * [EXERCISE](#gene-set_exercises)
 
 ## 1. Overview and Aims <a name="intro"></a>
 We'll start by reviewing the basics on genes and genomes: what they are, how we represent and talk about them, and how we go from a DNA sequence- a string of letters- to making predictions about gene function. We'll look at this in the context of WormBase ParaSite and other online database resources. 
@@ -544,25 +562,6 @@ Smp_000370
 [↥ **Back to top**](#top)
 
 
-
-# WormBase ParaSite
-
-## Table of contents
-1. [Overview and Aims](#aims)
-2. [Tools](#tools)
-    * [BLAST](#blast)
-      * [EXERCISE](#blast_exercise)
-    * [The genome browser](#genome_browser)
-    * [VEP](#vep)
-      * [EXERCISE](#vep_exercise)
-3. [Accessing WormBase ParaSite data programmatically](#programmatic_access)
-    * [Working with sequence and annotation files](#files)
-    * [The REST API](#api)
-      * [EXERCISE](#api_exercises)
-4. [The WormBase ParaSite Expression browser](#expression_data)
-      * [EXERCISE](#expression_exercise)
-5. [Gene-set enrichment analysis](#gene-set)
-      * [EXERCISE](#gene-set_exercises)
 
 ## Overview and Aims <a name="aims"></a>
 
