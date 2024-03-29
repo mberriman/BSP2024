@@ -748,8 +748,7 @@ Trying to read a BAM file won't be very informative because it's binary. It need
     ```
 <br>
 
-<details>
-<summary>Click here to read more about the BAM and SAM file formats</summary>
+#####A brief aside on the BAM and SAM file formats:#####
    
 The SAM file starts with a header section. All header lines begin with a ‘@’ character.
 
@@ -772,8 +771,6 @@ BAM index files should have exactly the same name as their corresponding BAM fil
 This should put a file called your_file.bam.bai in your working directory, which can be loaded into WormBase ParaSite JBrowse.
 
 ![](figures/jbrowse_12.png)
-</details>
-<br>
 
 We can only add an indexed BAM file to Jbrowse. To add a BAM track to Jbrowse :
 
