@@ -667,7 +667,7 @@ A genome browser is a tool that allows you to visualise a genome assembly and it
 
 There are several commonly used genome browsers in bioinformatics, each with different features. In WormBase ParaSite we have two:
 
-* Ensembl - this can be used to browse a large catalog of genomes across the tree of life. WormBase ParaSite has an instance of the Ensembl browser built in, and [we explored it in Module 1](https://github.com/WCSCourses/HelminthBioinformatics_2023/blob/main/manuals/module_1_WBP1/module_1_WBP1.md#genome_browser). 
+* Ensembl - this can be used to browse a large catalog of genomes across the tree of life. WormBase ParaSite has an instance of the Ensembl browser built in, and [we explored it earlier](https://github.com/mberriman/BSP2024/blob/main/manual/instructions.md#genome_browser).
 
 * [JBrowse 1](https://jbrowse.org/jbrowse1.html) - this is the genome browser that we’ll be using today. WormBase ParaSite has an instance of JBrowse for every genome that it hosts. The Apollo project is a well known extension of JBrowse, which can be used to edit gene models.
 
