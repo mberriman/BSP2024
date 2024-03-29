@@ -667,7 +667,7 @@ A genome browser is a tool that allows you to visualise a genome assembly and it
 
 There are several commonly used genome browsers in bioinformatics, each with different features. In WormBase ParaSite we have two:
 
-* Ensembl - this can be used to browse a large catalog of genomes across the tree of life. WormBase ParaSite has an instance of the Ensembl browser built in, and [we explored it earlier](https://github.com/mberriman/BSP2024/blob/main/manual/instructions.md#genome_browser).
+* Ensembl - this can be used to browse a large catalog of genomes across the tree of life. WormBase ParaSite has an instance of the Ensembl browser built in, and we explored it earlier.
 
 * [JBrowse 1](https://jbrowse.org/jbrowse1.html) - this is the genome browser that we’ll be using today. WormBase ParaSite has an instance of JBrowse for every genome that it hosts. The Apollo project is a well known extension of JBrowse, which can be used to edit gene models.
 
@@ -736,20 +736,18 @@ As well as looking at publicly available data, you can use WormBase ParaSite JBr
 
 We’ll demonstrate how to do this using a local BAM file.
 
-<details>
-<summary>What is a BAM file?</summary>
+What is a BAM file? It's based on a Sequence Alignment Map (SAM) file format, used in genomics to store sequencing read alignments against a reference sequence. BAM is binary version that is compressed and indexed, so that it is quick to access computationally.
    
-It's a file format used in genomics to store DNA sequencing reads alignment to a reference sequence. It is compressed and indexed, so that it is quick to access computationally.
-   
-Trying to read a BAM file won't be very informative because it's binary. It need to first be converted into the SAM file format (non-binary, human-readable). We can do that with samtools:
+Trying to read a BAM file won't be very informative because it's binary. It need to first be converted back into the SAM file format (non-binary, human-readable). We can do that with samtools:
 
 - [Samtools](http://www.htslib.org/doc/samtools.html) is a useful software package for manipulating SAM and BAM files.
-- We will use a samtools command to convert the BAM file to a SAM file so we can have a look at how it’s structured. Move to the module 3 data directory and type the following into your terminal:
+- To look at how a BAM file is structured, you'd need to use a command like this in a terminal window:
 
     ```bash
     samtools view -h your_file.bam | less
     ```
 <br>
+
 <details>
 <summary>Click here to read more about the BAM and SAM file formats</summary>
    
@@ -771,10 +769,9 @@ BAM index files should have exactly the same name as their corresponding BAM fil
     samtools index your_file.bam
     ```
 
-You should now see a file called your_file.bam.bai in your working directory. We can now load the file into WormBase ParaSite JBrowse.
+This should put a file called your_file.bam.bai in your working directory, which can be loaded into WormBase ParaSite JBrowse.
 
 ![](figures/jbrowse_12.png)
-</details>
 </details>
 <br>
 
