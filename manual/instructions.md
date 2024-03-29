@@ -901,7 +901,7 @@ This means that if somebody has already conducted a study to compare the conditi
 
 ![](figures/expression_2.png)
 
-For each study, we have a summary of the conditions for which data is available. You'll learn much more about how transcriptomic experiments are analysed in module 7, but for those who are interested we have used HISAT2 to align reads to the genome, HTSeq to quantify counts per gene and DESeq2 to compute differential expression per condition.
+For each study, we have a summary of the conditions for which data is available. A detailed description of transcriptomic experiments is beyond the scope of this workshop, but for those who are interested, HISAT2 was used to align reads to the genome, HTSeq to quantify counts per gene and DESeq2 to compute differential expression per condition.
 
 Several files are available for download. These are:
 
