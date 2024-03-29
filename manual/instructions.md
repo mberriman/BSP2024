@@ -955,18 +955,12 @@ Gene set enrichment analysis (GSEA) (also called functional enrichment analysis 
 
 ![image](https://user-images.githubusercontent.com/33452269/203346104-4ebe92bf-65c3-44d3-8e16-8bf4cd3342f8.png)
 
-Earlier, we talked about Gene Ontology (GO) [here](https://github.com/WCSCourses/HelminthBioinformatics_2023/blob/wbps_edits/manuals/module_1_WBP1/module_1_WBP1.md#go_terms).
-
-[here](https://github.com/mberriman/BSP2024/blob/edit/main/manual/instructions.md#go_terms)
-
-"Gene Ontology" enrichment analysis is one of the most commonly used enrichment analyses.
+Earlier, we talked about Gene Ontology (GO). "Gene Ontology" enrichment analysis is one of the most commonly used enrichment analyses.
 
 Gene ontology is a formal representation of knowledge about a gene with respect to three aspects:
 Molecular Function, Cellular Component and Biological Process.
 
-So what is the Gene Ontology (GO) enrichment analysis?
-
-Fundamentally, the gene ontology analysis is meant to answer a very simple question: “What biological processes, molecular functions, and cellular components are significantly associated with a set of genes or proteins?”
+Gene Ontology (GO) enrichment analysis answers the very simple question: “What biological processes, molecular functions, and cellular components are significantly associated with a set of genes or proteins?”
 
 For example, we can take the list of genes we identified as significantly upregulated in cercariae vs 24h-schistosomules and try to identify what are the biological processes, cellular components and molecular functions that are implicated in this developmental stage comparison.
 
