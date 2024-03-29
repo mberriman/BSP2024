@@ -748,7 +748,7 @@ Trying to read a BAM file won't be very informative because it's binary. It need
     ```
 <br>
 
-#####A brief aside on the BAM and SAM file formats:#####
+####A brief aside on the BAM and SAM file formats:####
    
 The SAM file starts with a header section. All header lines begin with a ‘@’ character.
 
@@ -767,7 +767,7 @@ BAM index files should have exactly the same name as their corresponding BAM fil
     ```bash
     samtools index your_file.bam
     ```
-
+<br>
 This should put a file called your_file.bam.bai in your working directory, which can be loaded into WormBase ParaSite JBrowse.
 
 ![](figures/jbrowse_12.png)
@@ -876,6 +876,8 @@ It is possible to view the distribution of variants along the coding sequence in
 ```bash
 bgzip file.vcf && tabix -p vcf file.vcf.gz
 ```
+
+<br>
 
 [↥ **Back to top**](#top)
 
