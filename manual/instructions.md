@@ -34,11 +34,9 @@ BREAK
     * [The genome browser](#genome_browser)
     * [VEP](#vep)
       * [EXERCISE](#vep_exercise)
-8. [Accessing WormBase ParaSite data programmatically](#programmatic_access)
-    * [Working with sequence and annotation files](#files)
-9. [The WormBase ParaSite Expression browser](#expression_data)
+8. [The WormBase ParaSite Expression browser](#expression_data)
       * [EXERCISE](#expression_exercise)
-10. [Gene-set enrichment analysis](#gene-set)
+9. [Gene-set enrichment analysis](#gene-set)
       * [EXERCISE](#gene-set_exercises)
 
 ## 1. Overview and Aims <a name="intro"></a>
@@ -416,7 +414,7 @@ Go to the gene page for the _Trichuris muris_ gene TMUE_2000008757 and retrieve 
 [↥ **Back to top**](#top)
 
 ---
-## BioMart <a name="biomart"></a>
+## 5\. BioMart <a name="biomart"></a>
 
 So far we have seen how you can manually browse WormBase ParaSite by searching for genes and then navigating to their gene/transcript/protein pages. However, in many cases you might have to automatically extract information from WormBase ParaSite for multiple entries. Or simply you might need to extract information about your favourite genome's features that fullfil some criteria.
 
