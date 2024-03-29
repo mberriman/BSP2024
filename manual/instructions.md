@@ -764,9 +764,10 @@ Before the file can be visualized in JBrowse, an index needs to be created. An i
 
 BAM index files should have exactly the same name as their corresponding BAM file, with the addition of a .bai suffix. You can index a BAM file using samtools. Type:
 
-    ```bash
-    samtools index your_file.bam
-    ```
+```bash
+samtools index your_file.bam
+```
+
 <br>
 This should put a file called your_file.bam.bai in your working directory, which can be loaded into WormBase ParaSite JBrowse.
 
