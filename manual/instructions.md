@@ -42,7 +42,7 @@ BREAK
 ## 1. Overview and Aims <a name="intro"></a>
 We'll start by reviewing the basics on genes and genomes: what they are, how we represent and talk about them, and how we go from a DNA sequence- a string of letters- to making predictions about gene function. We'll look at this in the context of WormBase ParaSite and other online database resources. 
 
-WormBase ParaSite gathers together nematode and flatworm genomes that have been assembled and annotated by the research community, adds additional analyses and makes these data available to the scientific community. We'll look at the kind of data you can retrieve, initially by exploring the website. In the last part of the module we'll introduce BioMart. This is a data-mining tool that allows you to retrieve WormBase ParaSite data in bulk.
+WormBase ParaSite gathers together nematode and flatworm genomes that have been assembled and annotated by the research community, adds additional analyses and makes these data available to the scientific community. We'll look at the kind of data you can retrieve, initially by exploring the website. We'll also look at BioMart, a data-mining tool that allows you to retrieve WormBase ParaSite data in bulk.
 
 ---
 ## 2. Genes and Genomes  <a name="genes_and_genomes"></a>
@@ -187,7 +187,7 @@ You can learn more about the Genome Browser [here](https://parasite.wormbase.org
 
 <details closed>
 <summary>Sneak peek</summary>
-There is an alternative interactive Genome Browser in WormBase ParaSite that can be accessed by the "View region in Jbrowse" button at the top-right of the gene page but we're going to talk about it in our next module!
+There is an alternative interactive Genome Browser in WormBase ParaSite that can be accessed by the "View region in Jbrowse" button at the top-right of the gene page but we're going to talk about it after the break!
 </details>
 <br>
 
@@ -811,9 +811,9 @@ You can download complete studies from the "Study Browser" tab but today we are 
 3\. Download the first 250kb of S. ratti chromosome 2:
   - Select "Rat threadworm / S_ratti_ED321" from the Organism/Assembly drop-down menu.
   - Filter by: Chromosomal Location - Region: SRAE_chr2:1-250000 and then click "Search".
-  - Click "Export as VCF" and place the downloaded file inside the "Module_3_WormBaseParaSite_2" directory.
+  - Click "Export as VCF".
 
-4\. Move to the "Module_3_WormBaseParaSite_2" directory and have a look at the file to see how it is structured:
+4\. Move to your Downloads directory and have a look at the file to see how it is structured:
 
 ```bash
 # look at the contents
@@ -843,7 +843,7 @@ The results are presented in pie-charts and an interactive table:
 
 10\. You can explore the results interactively on the webpage using the Results Preview filter panel at the centre. Use this panel and filter for variant that cause (select "consequence") changes to amino acids (select "missense_variant").  
 
-You can actually visualise the affected Amino acid by the "missense_variant" on the protein's 3D AlphaFold model ([We talked about these in our previous WBP module](https://github.com/WCSCourses/HelminthBioinformatics_2023/blob/main/manuals/module_1_WBP1/module_1_WBP1.md#af)).
+You can actually visualise the affected Amino acid by the "missense_variant" on the protein's 3D AlphaFold model.
 
 To do this:
 
@@ -956,7 +956,7 @@ Gene set enrichment analysis (GSEA) (also called functional enrichment analysis 
 
 Earlier, we talked about Gene Ontology (GO) [here](https://github.com/WCSCourses/HelminthBioinformatics_2023/blob/wbps_edits/manuals/module_1_WBP1/module_1_WBP1.md#go_terms).
 
-[here](https://github.com/mberriman/BSP2024/edit/main/manual/instructions.md#go_terms)
+[here](https://github.com/mberriman/BSP2024/blob/edit/main/manual/instructions.md#go_terms)
 
 "Gene Ontology" enrichment analysis is one of the most commonly used enrichment analyses.
 
