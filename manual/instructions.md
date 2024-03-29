@@ -560,11 +560,11 @@ Smp_000370
 
 [↥ **Back to top**](#top)
 
-
+## Break time! ##
 
 ## Overview and Aims <a name="aims"></a>
 
-In this module, we return to WormBase ParaSite.
+Welcome back!
 
 We will start by looking at commonly-used tools in WBPS:
 - BLAST
@@ -573,9 +573,7 @@ We will start by looking at commonly-used tools in WBPS:
 - Gene expression platform
 - g:Profiler
 
-We will then go on to apply some of the command line skills that you were introduced to in module 2 to explore WormBase ParaSite data programmatically.
-
-Finally, the module ends with a Bonus section introducing our Expression browser.
+Finally, the section ends with a an additional section introducing our Expression browser.
 
 ---
 ## Tools <a name="tools"></a>
