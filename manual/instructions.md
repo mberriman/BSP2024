@@ -3,6 +3,7 @@
 ## Table of contents
 
 (PART ONE)
+
 1. [Overview and Aims](#intro)
 2. [Genes and genomes](#genes_and_genomes)
     * [Genes: the basics](#basics_genes)
@@ -25,6 +26,7 @@
 BREAK
 
 (PART TWO)
+
 6. [Overview and Aims](#aims)
 7. [Tools](#tools)
     * [BLAST](#blast)
@@ -885,132 +887,6 @@ It is possible to view the distribution of variants along the coding sequence in
 bgzip file.vcf && tabix -p vcf file.vcf.gz
 ```
 
-[↥ **Back to top**](#top)
-
-## Accessing WormBase ParaSite data programmatically <a name="programmatic_access"></a>
-
-So far we've seen how you can interact with WormBase ParaSite data via a web browser, and how to query data in bulk using BioMart.
-
-In section we'll look at ways that you can interact with the same data but from the command line- first by downloading and processing files, and second via our REST API.
-
-We'll use some of the tools that you were introduced to in module 2 to do this.
-<br>
-<br>
-### Working with sequence and annotation files <a name="files"></a>
-
-For some analysis tasks you will need to download large data files. For example, if running software to align sequencing reads to the genome you'll need a genome FASTA file (we met this format earlier). If you want to see which genes your reads overlap, we'll need a [GFF](https://github.com/The-Sequence-Ontology/Specifications/blob/master/gff3.md) or [GTF](https://mblab.wustl.edu/GTF22.html) file. Sometimes, extracting data from a file is just the quickest way to get the information you need. Such files are accessible on WormBase ParaSite in two ways:
-
-1. On each genome landing page, in the Downloads section
-2. Via our structured FTP site, which you can access here: http://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/current/species/
-
-![](figures/files_1.png)
-
-Note first of all that all of the files are compressed (gzipped) to save space. You can tell by the ".gz" file extension. 
-
-The files come in three flavours:
-
-- **FASTA files**<br>FASTA files have a ".fa" extension. We met this format in module 1. They are sequence files, with a header line (denoted by ">") followed by a nucleotide or amino acid sequence on the next line. We provide three types of annotation FASTA file - proteins, CDS sequences and full length mRNA sequences. We also provide genome FASTA files: these may be soft-masked, hard-masked or not masked at all. Masking is the process of marking up repetitive or low complexity sequences in the genome: "hard-masking" means replacing these bases with Ns, whereas "soft-masking" means making them lower-case. Many bioinformatics software packages are designed to work with soft-masked genomes.
-
-- **Annotation files**<br>Annotation files have information about genomic features, such as genes. They come in two common formats, GFF (general feature format) and GTF (general transfer format), with the extenions ".gff3" and ".gtf" respectively. The full specification is available elsewhere (http://gmod.org/wiki/GFF3), but in short: each line describes a single feature, and related features can be linked together in a parent/child hierarchy. For example, an exon feature's parent might be an mRNA feature, and that mRNA's parent will be a gene feature:
-  ```
-  KI657455        WormBase_imported       gene    25      387     .       -       .       ID=gene:NECAME_00001;Name=NECAME_00001;biotype=protein_coding
-  KI657455        WormBase_imported       mRNA    25      387     .       -       .       ID=transcript:NECAME_00001;Parent=gene:NECAME_00001;Name=NECAME_00001
-  KI657455        WormBase_imported       exon    362     387     .       -       .       ID=exon:NECAME_00001.1;Parent=transcript:NECAME_00001
-  KI657455        WormBase_imported       exon    25      277     .       -       .       ID=exon:NECAME_00001.2;Parent=transcript:NECAME_00001
-  KI657455        WormBase_imported       CDS     362     387     .       -       0       ID=cds:NECAME_00001;Parent=transcript:NECAME_00001
-  KI657455        WormBase_imported       CDS     25      277     .       -       1       ID=cds:NECAME_00001;Parent=transcript:NECAME_00001
-  ```
-
-- **Ortholog/paralog files**<br>Finally, we provide a TSV (tab-separated variable) file for each genome containing calculated ortholog and paralog relationships for all genes in the genome.
-
-#### Walk through examples
-
-1. First of all, move to the module's specific directory:
-```bash
-cd ~/Module_3_WormBaseParaSite_2
-```
-
-```wget``` is a handy utility for retrieving online files including the ones from the FTP. The following will pull down the _Necator americanus_ GFF3 file into your working directory:
-
-```bash
-wget http://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/current/species/necator_americanus/PRJNA72135/necator_americanus.PRJNA72135.WBPS18.annotations.gff3.gz
-
-```
-
-Unzip the file and have a look at the contents:
-
-```bash
-gzip -d necator_americanus.PRJNA72135.WBPS18.annotations.gff3.gz
-less necator_americanus.PRJNA72135.WBPS18.annotations.gff3
-```
-
-Using the commands that you learned yesterday, we can manipulate these files to extract all sorts of information. Break down the following commands to understand what each section is doing:
-
-You can see that we'll be using the ```awk``` command a lot. The ```awk``` command is a powerful text processing tool commonly used in Unix and Linux environments. It allows you to manipulate and analyze structured data, such as text files or output from other commands, based on patterns and actions defined by you.
-
-To extract the names all of the gene features on scaffold "KI657457":
-
-```bash
-
-# There are various ways to achieve this
-
-# One is:
-grep "^KI657457" necator_americanus.PRJNA72135.WBPS18.annotations.gff3 | grep "\tgene\t" | cut -f9 | grep -o "Name=[^;]\+" | sed -e 's/Name=//'
-
-# Another more specific one is:
-grep -v "#"  necator_americanus.PRJNA72135.WBPS18.annotations.gff3  | awk '$3~/gene/ && $1~/KI657457/ {print}'  | grep -o "Name=[^;]\+" | sed -e 's/Name=//' 
-```
-
-Count how many genes each scaffold is annotated with:
-
-```bash
-# One way to do it:
-grep "\tgene\t" necator_americanus.PRJNA72135.WBPS18.annotations.gff3 | cut -f1 | sort | uniq -c
-
-# Another way:
-grep -v "#"  necator_americanus.PRJNA72135.WBPS18.annotations.gff3  | awk '$3~/gene/{print}'  | cut -f 1 | sort | uniq -c
-```
-
-Similarly, using the protein FASTA file:
-
-```bash
-# download the file
-wget https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/current/species/necator_americanus/PRJNA72135/necator_americanus.PRJNA72135.WBPS18.protein.fa.gz
-
-# unzip 
-gzip -d necator_americanus.PRJNA72135.WBPS18.protein.fa.gz
-
-# count the number of proteins
-grep -c "^>" necator_americanus.PRJNA72135.WBPS18.protein.fa
-
-# extract the sequence of NECAME_00165
-sed -n -e "/NAME_00165/,/^>/p" necator_americanus.PRJNA72135.WBPS18.protein.fa | sed -e '$d'
-```
-
-And a more complicated ```awk``` to extract scaffold lengths in a genome FASTA file:
-
-```bash
-# download the file
-wget  https://ftp.ebi.ac.uk/pub/databases/wormbase/parasite/releases/current/species/necator_americanus/PRJNA72135/necator_americanus.PRJNA72135.WBPS18.genomic.fa.gz
-
-# unzip 
-gzip -d necator_americanus.PRJNA72135.WBPS18.genomic.fa.gz
-
-# count the lengths
-awk '/^>/ { 
-  if (seqlen) {while 
-    print seqlen
-  }
-  split($1, header, " ")
-  print header[1]
-  seqlen = 0
-  next
-}
-{
-  seqlen += length($0)
-}
-END {print seqlen}'  necator_americanus.PRJNA72135.WBPS18.genomic.fa
-```
 [↥ **Back to top**](#top)
 
 ---
