@@ -538,7 +538,8 @@ Next, you will analyses a region of the Trichuris muris (murine whipworm) genome
 <br>
 8\. the gene stable IDs of their T. trichiura (human whipworm) orthologues. [Q: which gene has more than one _T. trichiura_ orthologue?]. <br>
 <br>
-9\. the names of any GO terms associated with the genes.
+9\. the names of any GO terms associated with the genes.<br>
+<br>
 10\. FASTA file of their peptide sequences.<br>
 <br>
 
