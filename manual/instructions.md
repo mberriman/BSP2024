@@ -531,11 +531,12 @@ Smp_000370
 4\. Retrieve (a) a FASTA file with the CDS sequence of each transcript encoded by these genes. Make sure that the transcript stable ID is in the header; and (b) a FASTA file containing the CDS sequence plus 100 nt downstream of the stop codon of each of those transcripts. In the header, include the transcript stable ID and the name of the scaffold that the transcript is on.
 
 Next, you will analyses a region of the Trichuris muris (murine whipworm) genome, from position 20,000,0000–20,500,000 on chromosome 1 ("TMUE_LG1").  From these coordinates, generate an output with:
+
 6\. The WormBase gene IDs and UniProtKB/TrEMBL IDs for T. muris genes from the region.
 7\. the InterPro domains that they have been annotated with (InterPro short description). [Q: why do some of the output rows appear multiple times?]
-3. the gene stable IDs of their T. trichiura (human whipworm) orthologues. [Q: which gene has more than one _T. trichiura_ orthologue?]. 
-4. the names of any GO terms associated with the genes.
-5. FASTA file of their peptide sequences.
+8\. the gene stable IDs of their T. trichiura (human whipworm) orthologues. [Q: which gene has more than one _T. trichiura_ orthologue?]. 
+9\. the names of any GO terms associated with the genes.
+10\. FASTA file of their peptide sequences.
 
 ---
 #### Extra BioMart questions (only if you have time!)
