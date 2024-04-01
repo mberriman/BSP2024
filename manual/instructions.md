@@ -399,7 +399,7 @@ You can read more about this pipeline [here](http://www.ensembl.org/info/genome/
 #### Gene page exercise <a name="gene_page_exercise"></a>
 
 The aim of this exercise is to familiarise yourself with the WormBase ParaSite gene page.
-Go to the gene page for the _Trichuris muris_ gene TMUE_2000008757 and retrieve the following information:
+Go to the gene page for the _Trichuris muris_ gene TMUE_3000014465 and retrieve the following information:
 1. What is the summary description of the gene? Do you have any idea what the gene might be doing from this description?
 2. How many transcripts of the gene are annotated?
 3. Which strand is the gene on? What is the name of the 5’ neighbouring gene?
@@ -407,10 +407,10 @@ Go to the gene page for the _Trichuris muris_ gene TMUE_2000008757 and retrieve 
 5. What identifier would you use to search for the gene in Uniprot?
 6. Where is this gene’s protein predicted to localise to?
 7. Which Pfam domains is the protein predicted to have? Which of these is responsible for its DNA binding activity?
-8. Download the protein alignment of TMUE_2000008757 and its _C. elegans_ orthologue. Is there any published literature on the _C. elegans_ orthologue?
+8. Download the protein alignment of TMUE_3000014465 and its _C. elegans_ orthologue. Is there any published literature on the _C. elegans_ orthologue?
    <details closed><summary>Hint</summary>Follow the link to the WormBase ParaSite page for the _C. elegans_ orthologue and look in the “Literature” tab.</details>
 9. Are there any phenotypes associated with this _T. muris_ gene according to the gene page? Which one(s)? Where are these gene-phenotype associations inferred from?
-    <details closed><summary>Hint</summary>Go back to the TMUE_2000008757 gene page and look in the "Phenotypes" tab.</details>
+    <details closed><summary>Hint</summary>Go back to the TMUE_3000014465 gene page and look in the "Phenotypes" tab.</details>
 [↥ **Back to top**](#top)
 
 ---
