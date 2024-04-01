@@ -530,26 +530,18 @@ Smp_000370
 
 4\. Retrieve (a) a FASTA file with the CDS sequence of each transcript encoded by these genes. Make sure that the transcript stable ID is in the header; and (b) a FASTA file containing the CDS sequence plus 100 nt downstream of the stop codon of each of those transcripts. In the header, include the transcript stable ID and the name of the scaffold that the transcript is on.
 
-Next, you will analyses a region of the Trichuris muris (murine whipworm) genome, from position 20,000,0000–20,500,000 on chromosome 1 ("TMUE_LG1").  From these coordinates, generate an output with:
+Next, you will analyses a region of the _Trichuris muris_ (murine whipworm) genome, from position 20,000,0000–20,500,000 on chromosome 1 ("TMUE_LG1").  From these coordinates, generate an output with:
 
-6\. The WormBase gene IDs and UniProtKB/TrEMBL IDs for T. muris genes from the region.<br>
+6\. The WormBase gene IDs and UniProtKB/TrEMBL IDs for _T. muris_ genes from the region.<br>
 <br>
 7\. the InterPro domains that they have been annotated with (InterPro short description). [Q: why do some of the output rows appear multiple times?]<br>
 <br>
-8\. the gene stable IDs of their T. trichiura (human whipworm) orthologues. [Q: which gene has more than one _T. trichiura_ orthologue?]. <br>
+8\. the gene stable IDs of their _T. trichiura_ (human whipworm) orthologues. [Q: which gene has more than one _T. trichiura_ orthologue?]. <br>
 <br>
 9\. the names of any GO terms associated with the genes.<br>
 <br>
 10\. FASTA file of their peptide sequences.<br>
 <br>
-
----
-#### Extra BioMart questions (only if you have time!)
-
-10\. Generate a table containing all of the protein coding genes on _Brugia malayi_ scaffold Bm_007. The table should have their gene stable IDs and start and end coordinates.
-11\. From this list, export a list of the gene IDs of the genes that have orthologues in _Brugia pahangi_.
-12\. Perform a new query and map the Gene IDs of the _Brugia pahangi_ genes identified in question 9 to their UniProt IDs.
-13\. How many worm pseudogenes are annotated in WBPS? Which worm genomes have annotated pseudogenes?
 
 [↥ **Back to top**](#top)
 
