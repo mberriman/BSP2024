@@ -27,16 +27,16 @@ BREAK
 
 (PART TWO)
 
-6\. [Overview and Aims](#aims)
-7\. [Tools](#tools)
+6. [Overview and Aims](#aims)
+7. [Tools](#tools)
     * [BLAST](#blast)
       * [EXERCISE](#blast_exercise)
     * [The genome browser](#genome_browser)
     * [VEP](#vep)
       * [EXERCISE](#vep_exercise)
-8\. [The WormBase ParaSite Expression browser](#expression_data)
+8. [The WormBase ParaSite Expression browser](#expression_data)
       * [EXERCISE](#expression_exercise)
-9\. [Gene-set enrichment analysis](#gene-set)
+9. [Gene-set enrichment analysis](#gene-set)
       * [EXERCISE](#gene-set_exercises)
 
 ## 1. Overview and Aims <a name="intro"></a>
