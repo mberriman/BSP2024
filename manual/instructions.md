@@ -487,30 +487,7 @@ BioMart lets us generate two types of output: data tables, and sequence (FASTA) 
 ---
 #### BioMart exercise <a name="biomart_exercise"></a>
 
-Use the following _S. ratti_  gene **names** (note: names, not stable IDs) and use BioMart to answer questions 1-5.
-
-```
-SRAE_1000001600
-SRAE_1000001700
-SRAE_1000001800
-SRAE_1000001900
-SRAE_1000002000
-SRAE_1000002100
-SRAE_1000002200
-SRAE_1000002300
-SRAE_1000002400
-SRAE_1000002500
-```
-
-Use the list of genes above and generate an output with:
-1. their WormBase gene IDs and UniProtKB/TrEMBL IDs. 
-2. the InterPro domains that they have been annotated with (InterPro short description). [Q: why do some of the output rows appear multiple times?]
-3. the gene stable IDs of their _Strongyloides stercoralis_ orthologues. [Q: which gene has more than one _S. stercoralis_ orthologue?]. 
-4. the names of any GO terms associated with the genes.
-5. FASTA file of their peptide sequences.
-
----
-Use the following _S. mansoni_ gene stable IDs to answer questions 6-9:
+Use the following _S. mansoni_ gene stable IDs to answer questions 1-4:
 
 ```
 Smp_000090 
@@ -545,10 +522,20 @@ Smp_000110
 Smp_000370
 ```
 
-6\. How many of these genes have orthologues in _S. haematobium_?
-7\. Generate a table listing the genes in question 6. The table should also has the gene stable ID for the homologue in both species, the homology type (1-1, 1-many, etc), and the % identity between the two orthologues.
-8\. Of these genes, how many also do not have a human orthologue?
-9\. Retrieve (a) a FASTA file with the CDS sequence of each transcript encoded by these genes. Make sure that the transcript stable ID is in the header; and (b) a FASTA file containing the CDS sequence plus 100 nt downstream of the stop codon of each of those transcripts. In the header, include the transcript stable ID and the name of the scaffold that the transcript is on.
+1\. How many of these genes have orthologues in _S. haematobium_?
+
+2\. Generate a table listing the genes in question 6. The table should also has the gene stable ID for the homologue in both species, the homology type (1-1, 1-many, etc), and the % identity between the two orthologues.
+
+3\. Of these genes, how many also do not have a human orthologue?
+
+4\. Retrieve (a) a FASTA file with the CDS sequence of each transcript encoded by these genes. Make sure that the transcript stable ID is in the header; and (b) a FASTA file containing the CDS sequence plus 100 nt downstream of the stop codon of each of those transcripts. In the header, include the transcript stable ID and the name of the scaffold that the transcript is on.
+
+Next, you will analyses a region of the Trichuris muris (murine whipworm) genome, from position 20,000,0000–20,500,000 on chromosome 1 ("TMUE_LG1").  From these coordinates, generate an output with:
+6\. The WormBase gene IDs and UniProtKB/TrEMBL IDs for T. muris genes from the region.
+7\. the InterPro domains that they have been annotated with (InterPro short description). [Q: why do some of the output rows appear multiple times?]
+3. the gene stable IDs of their T. trichiura (human whipworm) orthologues. [Q: which gene has more than one _T. trichiura_ orthologue?]. 
+4. the names of any GO terms associated with the genes.
+5. FASTA file of their peptide sequences.
 
 ---
 #### Extra BioMart questions (only if you have time!)
