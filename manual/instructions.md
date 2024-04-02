@@ -524,7 +524,7 @@ Smp_000370
 
 1\. How many of these genes have orthologues in _S. haematobium_?
 
-2\. Generate a table listing the genes in question 6. The table should also has the gene stable ID for the homologue in both species, the homology type (1-1, 1-many, etc), and the % identity between the two orthologues.
+2\. Generate a table listing the genes. The table should also has the gene stable ID for the homologue in both species, the homology type (1-1, 1-many, etc), and the % identity between the two orthologues.
 
 3\. Of these genes, how many also do not have a human orthologue?
 
