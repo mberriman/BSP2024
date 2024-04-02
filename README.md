@@ -24,6 +24,6 @@ If we have time, we’ll also talk about ways in which you can get involved in h
 - [Sarah Dyer](https://www.ebi.ac.uk/people/person/Sarah-Dyer/), EMBL-EBI, UK
   
 ## Course Manual
-- [Introductory presentation](presentations/Module_1_WBP_1/Module_1_WBP_1.pptx)
+- [Introductory presentation](https://docs.google.com/presentation/d/1yyuMigSpfa_e6XJ1cL731p_s8hOnSbHu/edit?usp=sharing&ouid=116643088693003939180&rtpof=true&sd=true)
 - [Instructions](manual/instructions.md)
 
