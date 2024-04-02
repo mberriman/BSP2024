@@ -21,7 +21,7 @@ If we have time, we’ll also talk about ways in which you can get involved in h
 
 ## Instructors
 - [Matt Berriman](https://www.gla.ac.uk/research/az/wcip/research/researchleaders/berrimangroup/), University of Glasgow, UK
-- [Sarah Dyer](https://www.ebi.ac.uk/people/person/Sarah-Dyer/), EMBL-EBI, UK
+- [Sarah Dyer](https://www.ebi.ac.uk/people/person/sarah-dyer/), EMBL-EBI, UK
   
 ## Course Manual
 - [Introductory presentation](https://docs.google.com/presentation/d/1yyuMigSpfa_e6XJ1cL731p_s8hOnSbHu/edit?usp=sharing&ouid=116643088693003939180&rtpof=true&sd=true)
